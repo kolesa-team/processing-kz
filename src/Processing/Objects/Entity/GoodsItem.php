@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects;
+namespace Processing\Objects\Entity;
 
 class GoodsItem
 {
@@ -25,7 +25,7 @@ class GoodsItem
 
     /**
      * @param $amount
-     * @return \Processing\Objects\GoodsItem
+     * @return \Processing\Objects\Entity\GoodsItem
      */
     public function setAmount($amount)
     {
@@ -44,7 +44,7 @@ class GoodsItem
 
     /**
      * @param $currencyCode
-     * @return \Processing\Objects\GoodsItem
+     * @return \Processing\Objects\Entity\GoodsItem
      */
     public function setCurrencyCode($currencyCode)
     {
@@ -63,7 +63,7 @@ class GoodsItem
 
     /**
      * @param $merchantsGoodsID
-     * @return \Processing\Objects\GoodsItem
+     * @return \Processing\Objects\Entity\GoodsItem
      */
     public function setMerchantsGoodsID($merchantsGoodsID)
     {
@@ -82,7 +82,7 @@ class GoodsItem
 
     /**
      * @param $nameOfGoods
-     * @return \Processing\Objects\GoodsItem
+     * @return \Processing\Objects\Entity\GoodsItem
      */
     public function setNameOfGoods($nameOfGoods)
     {

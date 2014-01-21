@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects;
+namespace Processing\Objects\Entity;
 
 class StartTransactionResult
 {
@@ -24,8 +24,8 @@ class StartTransactionResult
     protected $success;
 
     /**
-     * @param  string                                     $customerReference
-     * @return \Processing\Objects\StartTransactionResult
+     * @param  string                                            $customerReference
+     * @return \Processing\Objects\Entity\StartTransactionResult
      */
     public function setCustomerReference($customerReference)
     {
@@ -43,8 +43,8 @@ class StartTransactionResult
     }
 
     /**
-     * @param  string                                     $errorDescription
-     * @return \Processing\Objects\StartTransactionResult
+     * @param  string                                            $errorDescription
+     * @return \Processing\Objects\Entity\StartTransactionResult
      */
     public function setErrorDescription($errorDescription)
     {
@@ -62,8 +62,8 @@ class StartTransactionResult
     }
 
     /**
-     * @param  string                                     $redirectURL
-     * @return \Processing\Objects\StartTransactionResult
+     * @param  string                                            $redirectURL
+     * @return \Processing\Objects\Entity\StartTransactionResult
      */
     public function setRedirectURL($redirectURL)
     {
@@ -81,8 +81,8 @@ class StartTransactionResult
     }
 
     /**
-     * @param  boolean                                    $success
-     * @return \Processing\Objects\StartTransactionResult
+     * @param  boolean                                           $success
+     * @return \Processing\Objects\Entity\StartTransactionResult
      */
     public function setSuccess($success)
     {

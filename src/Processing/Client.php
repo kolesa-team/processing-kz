@@ -1,8 +1,19 @@
 <?php
 namespace Processing;
 
+use Processing\Objects\Request;
+use Processing\Objects\Response;
+
 class Client extends \SoapClient
 {
+    /**
+     * @var array
+     */
+    protected $defaults = [
+        'uri'        => 'https://kz.processing.cnp.merchant_ws/',
+        'soapaction' => '',
+    ];
+
     /**
      * {@inheritdoc}
      *
@@ -31,17 +42,68 @@ class Client extends \SoapClient
     }
 
     /**
+     *
+     *
+     * @param  \Processing\Objects\Request\StartTransaction  $parameters
+     * @return \Processing\Objects\Response\StartTransaction
+     */
+    public function startTransaction(Request\StartTransaction $parameters)
+    {
+        return $this->__soapCall('startTransaction', [$parameters], $this->defaults);
+
+    }
+
+    /**
+     *
+     *
+     * @param  \Processing\Objects\Request\RefundTransaction  $parameters
+     * @return \Processing\Objects\Response\RefundTransaction
+     */
+    public function refundTransaction(Request\RefundTransaction $parameters)
+    {
+        return $this->__soapCall('refundTransaction', [$parameters], $this->defaults);
+    }
+
+    /**
+     * @return \Processing\Objects\Response\GetVersion
+     */
+    public function getVersion()
+    {
+        return $this->__soapCall('getVersion', [], $this->defaults);
+    }
+
+    /**
+     * @param  \Processing\Objects\Request\GetTransactionStatus  $parameters
+     * @return \Processing\Objects\Response\GetTransactionStatus
+     */
+    public function getTransactionStatus(Request\GetTransactionStatus $parameters)
+    {
+        return $this->__soapCall('getTransactionStatus', [$parameters], $this->defaults);
+    }
+
+    /**
+     *
+     *
+     * @param  \Processing\Objects\Request\CompleteTransaction  $parameters
+     * @return \Processing\Objects\Response\CompleteTransaction
+     */
+    public function completeTransaction(Request\CompleteTransaction $parameters)
+    {
+        return $this->__soapCall('completeTransaction', [$parameters], $this->defaults);
+    }
+
+    /**
      * @return array
      */
     protected function getClassMap()
     {
         return [
-            'StartTransactionResult'       => '\Processing\Objects\StartTransactionResult',
-            'TransactionDetails'           => '\Processing\Objects\TransactionDetails',
-            'Address'                      => '\Processing\Objects\Address',
-            'GoodsItem'                    => '\Processing\Objects\GoodsItem',
-            'AdditionalInformation'        => '\Processing\Objects\AdditionalInformation',
-            'StoredTransactionStatus'      => '\Processing\Objects\StoredTransactionStatus',
+            'StartTransactionResult'       => '\Processing\Objects\Entity\StartTransactionResult',
+            'TransactionDetails'           => '\Processing\Objects\Entity\TransactionDetails',
+            'Address'                      => '\Processing\Objects\Entity\Address',
+            'GoodsItem'                    => '\Processing\Objects\Entity\GoodsItem',
+            'AdditionalInformation'        => '\Processing\Objects\Entity\AdditionalInformation',
+            'StoredTransactionStatus'      => '\Processing\Objects\Entity\StoredTransactionStatus',
             'startTransaction'             => '\Processing\Objects\Request\StartTransaction',
             'startTransactionResponse'     => '\Processing\Objects\Response\StartTransaction',
             'refundTransaction'            => '\Processing\Objects\Request\RefundTransaction',

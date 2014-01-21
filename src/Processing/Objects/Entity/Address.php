@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects;
+namespace Processing\Objects\Entity;
 
 class Address
 {
@@ -35,7 +35,7 @@ class Address
 
     /**
      * @param $addressLine1
-     * @return \Processing\Objects\Address
+     * @return \Processing\Objects\Entity\Address
      */
     public function setAddressLine1($addressLine1)
     {
@@ -54,7 +54,7 @@ class Address
 
     /**
      * @param $addressLine2
-     * @return \Processing\Objects\Address
+     * @return \Processing\Objects\Entity\Address
      */
     public function setAddressLine2($addressLine2)
     {
@@ -73,7 +73,7 @@ class Address
 
     /**
      * @param $city
-     * @return \Processing\Objects\Address
+     * @return \Processing\Objects\Entity\Address
      */
     public function setCity($city)
     {
@@ -92,7 +92,7 @@ class Address
 
     /**
      * @param $country
-     * @return \Processing\Objects\Address
+     * @return \Processing\Objects\Entity\Address
      */
     public function setCountry($country)
     {
@@ -111,7 +111,7 @@ class Address
 
     /**
      * @param $county
-     * @return \Processing\Objects\Address
+     * @return \Processing\Objects\Entity\Address
      */
     public function setCounty($county)
     {
@@ -130,7 +130,7 @@ class Address
 
     /**
      * @param $zip
-     * @return \Processing\Objects\Address
+     * @return \Processing\Objects\Entity\Address
      */
     public function setZip($zip)
     {

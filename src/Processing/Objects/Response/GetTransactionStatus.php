@@ -1,14 +1,14 @@
 <?php
 namespace Processing\Objects\Response;
 
-use Processing\Objects\StoredTransactionStatus;
+use Processing\Objects\Entity\StoredTransactionStatus;
 
 class GetTransactionStatus extends Base
 {
     /**
      * {@inheritdoc}
      *
-     * @param  \Processing\Objects\StoredTransactionStatus   $return
+     * @param  \Processing\Objects\Entity\StoredTransactionStatus $return
      * @return \Processing\Objects\Response\StartTransaction
      */
     public function setReturn(StoredTransactionStatus $return)

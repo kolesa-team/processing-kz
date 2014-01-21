@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects;
+namespace Processing\Objects\Entity;
 
 class AdditionalInformation
 {
@@ -14,8 +14,8 @@ class AdditionalInformation
     public $value;
 
     /**
-     * @param  string                                    $key
-     * @return \Processing\Objects\AdditionalInformation
+     * @param  string                                           $key
+     * @return \Processing\Objects\Entity\AdditionalInformation
      */
     public function setKey($key)
     {
@@ -33,8 +33,8 @@ class AdditionalInformation
     }
 
     /**
-     * @param  string                                    $value
-     * @return \Processing\Objects\AdditionalInformation
+     * @param  string                                           $value
+     * @return \Processing\Objects\Entity\AdditionalInformation
      */
     public function setValue($value)
     {

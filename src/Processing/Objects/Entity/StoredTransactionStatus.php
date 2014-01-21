@@ -1,10 +1,10 @@
 <?php
-namespace Processing\Objects;
+namespace Processing\Objects\Entity;
 
 class StoredTransactionStatus
 {
     /**
-     * @var \Processing\Objects\AdditionalInformation
+     * @var \Processing\Objects\Entity\AdditionalInformation
      */
     protected $additionalInformation;
 
@@ -34,7 +34,7 @@ class StoredTransactionStatus
     protected $authCode;
 
     /**
-     * @var \Processing\Objects\GoodsItem
+     * @var \Processing\Objects\Entity\GoodsItem
      */
     protected $goods;
 
@@ -49,8 +49,8 @@ class StoredTransactionStatus
     protected $transactionStatus;
 
     /**
-     * @param  \Processing\Objects\AdditionalInformation   $additionalInformation
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  \Processing\Objects\Entity\AdditionalInformation   $additionalInformation
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setAdditionalInformation($additionalInformation)
     {
@@ -60,7 +60,7 @@ class StoredTransactionStatus
     }
 
     /**
-     * @return \Processing\Objects\AdditionalInformation
+     * @return \Processing\Objects\Entity\AdditionalInformation
      */
     public function getAdditionalInformation()
     {
@@ -68,8 +68,8 @@ class StoredTransactionStatus
     }
 
     /**
-     * @param  string                                      $amountAuthorised
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  string                                             $amountAuthorised
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setAmountAuthorised($amountAuthorised)
     {
@@ -87,8 +87,8 @@ class StoredTransactionStatus
     }
 
     /**
-     * @param  string                                      $amountRefunded
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  string                                             $amountRefunded
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setAmountRefunded($amountRefunded)
     {
@@ -106,8 +106,8 @@ class StoredTransactionStatus
     }
 
     /**
-     * @param  string                                      $amountRequested
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  string                                             $amountRequested
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setAmountRequested($amountRequested)
     {
@@ -125,8 +125,8 @@ class StoredTransactionStatus
     }
 
     /**
-     * @param  string                                      $amountSettled
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  string                                             $amountSettled
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setAmountSettled($amountSettled)
     {
@@ -144,8 +144,8 @@ class StoredTransactionStatus
     }
 
     /**
-     * @param  string                                      $authCode
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  string                                             $authCode
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setAuthCode($authCode)
     {
@@ -163,8 +163,8 @@ class StoredTransactionStatus
     }
 
     /**
-     * @param  \Processing\Objects\GoodsItem               $goods
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  \Processing\Objects\Entity\GoodsItem               $goods
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setGoods($goods)
     {
@@ -174,7 +174,7 @@ class StoredTransactionStatus
     }
 
     /**
-     * @return \Processing\Objects\GoodsItem
+     * @return \Processing\Objects\Entity\GoodsItem
      */
     public function getGoods()
     {
@@ -182,8 +182,8 @@ class StoredTransactionStatus
     }
 
     /**
-     * @param  string                                      $transactionCurrencyCode
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  string                                             $transactionCurrencyCode
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setTransactionCurrencyCode($transactionCurrencyCode)
     {
@@ -201,8 +201,8 @@ class StoredTransactionStatus
     }
 
     /**
-     * @param  string                                      $transactionStatus
-     * @return \Processing\Objects\StoredTransactionStatus
+     * @param  string                                             $transactionStatus
+     * @return \Processing\Objects\Entity\StoredTransactionStatus
      */
     public function setTransactionStatus($transactionStatus)
     {

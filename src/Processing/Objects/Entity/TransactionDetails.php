@@ -1,10 +1,10 @@
 <?php
-namespace Processing\Objects;
+namespace Processing\Objects\Entity;
 
 class TransactionDetails
 {
     /**
-     * @var \Processing\Objects\Address
+     * @var \Processing\Objects\Entity\Address
      */
     protected $billingAddress;
 
@@ -24,7 +24,7 @@ class TransactionDetails
     protected $description;
 
     /**
-     * @var \Processing\Objects\GoodsItem
+     * @var \Processing\Objects\Entity\GoodsItem
      */
     protected $goodsList;
 
@@ -34,7 +34,7 @@ class TransactionDetails
     protected $languageCode;
 
     /**
-     * @var \Processing\Objects\AdditionalInformation
+     * @var \Processing\Objects\Entity\AdditionalInformation
      */
     protected $merchantAdditionalInformationList;
 
@@ -85,7 +85,7 @@ class TransactionDetails
 
     /**
      * @param $billingAddress
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setBillingAddress(Address $billingAddress)
     {
@@ -95,7 +95,7 @@ class TransactionDetails
     }
 
     /**
-     * @return \Processing\Objects\Address
+     * @return \Processing\Objects\Entity\Address
      */
     public function getBillingAddress()
     {
@@ -104,7 +104,7 @@ class TransactionDetails
 
     /**
      * @param $currencyCode
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setCurrencyCode($currencyCode)
     {
@@ -123,7 +123,7 @@ class TransactionDetails
 
     /**
      * @param $customerReference
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setCustomerReference($customerReference)
     {
@@ -142,7 +142,7 @@ class TransactionDetails
 
     /**
      * @param $description
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setDescription($description)
     {
@@ -161,7 +161,7 @@ class TransactionDetails
 
     /**
      * @param $goodsList
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setGoodsList(GoodsItem $goodsList)
     {
@@ -171,7 +171,7 @@ class TransactionDetails
     }
 
     /**
-     * @return \Processing\Objects\GoodsItem
+     * @return \Processing\Objects\Entity\GoodsItem
      */
     public function getGoodsList()
     {
@@ -180,7 +180,7 @@ class TransactionDetails
 
     /**
      * @param $languageCode
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setLanguageCode($languageCode)
     {
@@ -199,7 +199,7 @@ class TransactionDetails
 
     /**
      * @param $merchantAdditionalInformationList
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setMerchantAdditionalInformationList(AdditionalInformation $merchantAdditionalInformationList)
     {
@@ -209,7 +209,7 @@ class TransactionDetails
     }
 
     /**
-     * @return \Processing\Objects\AdditionalInformation
+     * @return \Processing\Objects\Entity\AdditionalInformation
      */
     public function getMerchantAdditionalInformationList()
     {
@@ -218,7 +218,7 @@ class TransactionDetails
 
     /**
      * @param $merchantId
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setMerchantId($merchantId)
     {
@@ -237,7 +237,7 @@ class TransactionDetails
 
     /**
      * @param $merchantLocalDateTime
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setMerchantLocalDateTime($merchantLocalDateTime)
     {
@@ -256,7 +256,7 @@ class TransactionDetails
 
     /**
      * @param $orderId
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setOrderId($orderId)
     {
@@ -275,7 +275,7 @@ class TransactionDetails
 
     /**
      * @param $purchaserEmail
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setPurchaserEmail($purchaserEmail)
     {
@@ -294,7 +294,7 @@ class TransactionDetails
 
     /**
      * @param $purchaserName
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setPurchaserName($purchaserName)
     {
@@ -313,7 +313,7 @@ class TransactionDetails
 
     /**
      * @param $purchaserPhone
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setPurchaserPhone($purchaserPhone)
     {
@@ -332,7 +332,7 @@ class TransactionDetails
 
     /**
      * @param $returnURL
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setReturnURL($returnURL)
     {
@@ -351,7 +351,7 @@ class TransactionDetails
 
     /**
      * @param $terminalId
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setTerminalId($terminalId)
     {
@@ -370,7 +370,7 @@ class TransactionDetails
 
     /**
      * @param $totalAmount
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function setTotalAmount($totalAmount)
     {

@@ -4,12 +4,12 @@ namespace Processing\Objects\Request;
 class StartTransaction extends Base
 {
     /**
-     * @var \Processing\Objects\TransactionDetails
+     * @var \Processing\Objects\Entity\TransactionDetails
      */
     protected $transaction;
 
     /**
-     * @param  \Processing\Objects\TransactionDetails       $transaction
+     * @param  \Processing\Objects\Entity\TransactionDetails $transaction
      * @return \Processing\Objects\Request\StartTransaction
      */
     public function setTransaction($transaction)
@@ -20,7 +20,7 @@ class StartTransaction extends Base
     }
 
     /**
-     * @return \Processing\Objects\TransactionDetails
+     * @return \Processing\Objects\Entity\TransactionDetails
      */
     public function getTransaction()
     {

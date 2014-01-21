@@ -29,17 +29,17 @@ class RefundTransaction extends Base
     protected $description;
 
     /**
-     * @var \Processing\Objects\GoodsItem
+     * @var \Processing\Objects\Entity\GoodsItem
      */
     protected $goodsToRefund;
 
     /**
-     * @var \Processing\Objects\AdditionalInformation
+     * @var \Processing\Objects\Entity\AdditionalInformation
      */
     protected $additionalInformation;
 
     /**
-     * @param  \Processing\Objects\AdditionalInformation     $additionalInformation
+     * @param  \Processing\Objects\Entity\AdditionalInformation $additionalInformation
      * @return \Processing\Objects\Request\RefundTransaction
      */
     public function setAdditionalInformation($additionalInformation)
@@ -50,7 +50,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * @return \Processing\Objects\AdditionalInformation
+     * @return \Processing\Objects\Entity\AdditionalInformation
      */
     public function getAdditionalInformation()
     {
@@ -77,7 +77,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * @param  \Processing\Objects\GoodsItem                 $goodsToRefund
+     * @param  \Processing\Objects\Entity\GoodsItem          $goodsToRefund
      * @return \Processing\Objects\Request\RefundTransaction
      */
     public function setGoodsToRefund($goodsToRefund)
@@ -88,7 +88,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * @return \Processing\Objects\GoodsItem
+     * @return \Processing\Objects\Entity\GoodsItem
      */
     public function getGoodsToRefund()
     {
