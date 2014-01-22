@@ -1,29 +1,42 @@
 <?php
 namespace Processing\Objects\Entity;
 
+/**
+ * Class represents result of transaction start command.
+ */
 class StartTransactionResult
 {
     /**
+     * Reference in customer's system.
+     *
      * @var string
      */
     protected $customerReference;
 
     /**
+     * Description of error.
+     *
      * @var string
      */
     protected $errorDescription;
 
     /**
+     * URL where user would be redirected.
+     *
      * @var string
      */
     protected $redirectURL;
 
     /**
+     * Success status of command.
+     *
      * @var boolean
      */
     protected $success;
 
     /**
+     * Set customer's reference.
+     *
      * @param  string                                            $customerReference
      * @return \Processing\Objects\Entity\StartTransactionResult
      */
@@ -35,6 +48,8 @@ class StartTransactionResult
     }
 
     /**
+     * Get customer's reference.
+     *
      * @return string
      */
     public function getCustomerReference()
@@ -43,6 +58,8 @@ class StartTransactionResult
     }
 
     /**
+     * Set error description.
+     *
      * @param  string                                            $errorDescription
      * @return \Processing\Objects\Entity\StartTransactionResult
      */
@@ -54,6 +71,8 @@ class StartTransactionResult
     }
 
     /**
+     * Get error description.
+     *
      * @return string
      */
     public function getErrorDescription()
@@ -62,6 +81,8 @@ class StartTransactionResult
     }
 
     /**
+     * Set redirect URL.
+     *
      * @param  string                                            $redirectURL
      * @return \Processing\Objects\Entity\StartTransactionResult
      */
@@ -73,6 +94,8 @@ class StartTransactionResult
     }
 
     /**
+     * Get redirect URL.
+     *
      * @return string
      */
     public function getRedirectURL()
@@ -81,6 +104,8 @@ class StartTransactionResult
     }
 
     /**
+     * Set success status.
+     *
      * @param  boolean                                           $success
      * @return \Processing\Objects\Entity\StartTransactionResult
      */
@@ -92,6 +117,8 @@ class StartTransactionResult
     }
 
     /**
+     * Get success status.
+     *
      * @return boolean
      */
     public function getSuccess()

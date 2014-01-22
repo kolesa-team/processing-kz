@@ -1,29 +1,42 @@
 <?php
 namespace Processing\Objects\Entity;
 
+/**
+ * Class represents goods item.
+ */
 class GoodsItem
 {
     /**
+     * Amount of goods.
+     *
      * @var string
      */
     protected $amount;
 
     /**
+     * Currency code.
+     *
      * @var integer
      */
     protected $currencyCode;
 
     /**
+     * Merchant's goods identifier.
+     *
      * @var string
      */
     protected $merchantsGoodsID;
 
     /**
+     * Name of goods.
+     *
      * @var string
      */
     protected $nameOfGoods;
 
     /**
+     * Set amount of goods.
+     *
      * @param $amount
      * @return \Processing\Objects\Entity\GoodsItem
      */
@@ -35,6 +48,8 @@ class GoodsItem
     }
 
     /**
+     * Get amount of goods.
+     *
      * @return string
      */
     public function getAmount()
@@ -43,6 +58,8 @@ class GoodsItem
     }
 
     /**
+     * Set currency code.
+     *
      * @param $currencyCode
      * @return \Processing\Objects\Entity\GoodsItem
      */
@@ -54,6 +71,8 @@ class GoodsItem
     }
 
     /**
+     * Get currency code.
+     *
      * @return integer
      */
     public function getCurrencyCode()
@@ -62,17 +81,21 @@ class GoodsItem
     }
 
     /**
-     * @param $merchantsGoodsID
+     * Set merchant's goods identifier.
+     *
+     * @param $merchantsGoodsId
      * @return \Processing\Objects\Entity\GoodsItem
      */
-    public function setMerchantsGoodsID($merchantsGoodsID)
+    public function setMerchantsGoodsID($merchantsGoodsId)
     {
-        $this->merchantsGoodsID = $merchantsGoodsID;
+        $this->merchantsGoodsID = $merchantsGoodsId;
 
         return $this;
     }
 
     /**
+     * Get merchant's goods identifier.
+     *
      * @return string
      */
     public function getMerchantsGoodsID()
@@ -81,6 +104,8 @@ class GoodsItem
     }
 
     /**
+     * Set name of goods.
+     *
      * @param $nameOfGoods
      * @return \Processing\Objects\Entity\GoodsItem
      */
@@ -92,11 +117,12 @@ class GoodsItem
     }
 
     /**
+     * Get name of goods.
+     *
      * @return string
      */
     public function getNameOfGoods()
     {
         return $this->nameOfGoods;
     }
-
 }

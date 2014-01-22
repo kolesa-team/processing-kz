@@ -3,6 +3,9 @@ namespace Processing\Objects\Response;
 
 use Processing\Objects\Entity\StartTransactionResult;
 
+/**
+ * Start transaction response.
+ */
 class StartTransaction extends Base
 {
     /**

@@ -1,14 +1,21 @@
 <?php
 namespace Processing\Objects\Response;
 
+/**
+ * Base response class.
+ */
 abstract class Base
 {
     /**
+     * Return code/status.
+     *
      * @var mixed
      */
     protected $return;
 
     /**
+     * Set return code/status.
+     *
      * @param  mixed                             $return
      * @return \Processing\Objects\Response\Base
      */
@@ -20,6 +27,8 @@ abstract class Base
     }
 
     /**
+     * Get return code/status.
+     *
      * @return mixed
      */
     public function getReturn()

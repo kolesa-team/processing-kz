@@ -1,39 +1,56 @@
 <?php
 namespace Processing\Objects\Entity;
 
+/**
+ * Class represents post address.
+ */
 class Address
 {
     /**
+     * First line of address.
+     *
      * @var string
      */
     protected $addressLine1;
 
     /**
+     * Second line of address.
+     *
      * @var string
      */
     protected $addressLine2;
 
     /**
+     * Address city.
+     *
      * @var string
      */
     protected $city;
 
     /**
+     * Address country.
+     *
      * @var string
      */
     protected $country;
 
     /**
+     * Address county.
+     *
      * @var string
      */
     protected $county;
 
     /**
+     * Address ZIP-code.
+     *
      * @var string
      */
     protected $zip;
 
     /**
+     * Set first line of address.
+     *
      * @param $addressLine1
      * @return \Processing\Objects\Entity\Address
      */
@@ -45,6 +62,8 @@ class Address
     }
 
     /**
+     * Get first line of address.
+     *
      * @return string
      */
     public function getAddressLine1()
@@ -53,6 +72,8 @@ class Address
     }
 
     /**
+     * Set second line of address.
+     *
      * @param $addressLine2
      * @return \Processing\Objects\Entity\Address
      */
@@ -64,6 +85,8 @@ class Address
     }
 
     /**
+     * Get second line of address.
+     *
      * @return string
      */
     public function getAddressLine2()
@@ -72,6 +95,8 @@ class Address
     }
 
     /**
+     * Set city.
+     *
      * @param $city
      * @return \Processing\Objects\Entity\Address
      */
@@ -83,6 +108,8 @@ class Address
     }
 
     /**
+     * Get city.
+     *
      * @return string
      */
     public function getCity()
@@ -91,6 +118,8 @@ class Address
     }
 
     /**
+     * Set country.
+     *
      * @param $country
      * @return \Processing\Objects\Entity\Address
      */
@@ -102,6 +131,8 @@ class Address
     }
 
     /**
+     * Get country.
+     *
      * @return string
      */
     public function getCountry()
@@ -110,6 +141,8 @@ class Address
     }
 
     /**
+     * Set county.
+     *
      * @param $county
      * @return \Processing\Objects\Entity\Address
      */
@@ -121,6 +154,8 @@ class Address
     }
 
     /**
+     * Get county.
+     *
      * @return string
      */
     public function getCounty()
@@ -129,6 +164,8 @@ class Address
     }
 
     /**
+     * Set ZIP-code.
+     *
      * @param $zip
      * @return \Processing\Objects\Entity\Address
      */
@@ -140,11 +177,12 @@ class Address
     }
 
     /**
+     * Get ZIP-code.
+     *
      * @return string
      */
     public function getZip()
     {
         return $this->zip;
     }
-
 }

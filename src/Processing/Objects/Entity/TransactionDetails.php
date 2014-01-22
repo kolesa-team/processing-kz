@@ -4,86 +4,120 @@ namespace Processing\Objects\Entity;
 class TransactionDetails
 {
     /**
+     * Billing address.
+     *
      * @var \Processing\Objects\Entity\Address
      */
     protected $billingAddress;
 
     /**
+     * Currency code.
+     *
      * @var integer
      */
     protected $currencyCode;
 
     /**
+     * Reference in customer's system.
+     *
      * @var string
      */
     protected $customerReference;
 
     /**
+     * Transaction description.
+     *
      * @var string
      */
     protected $description;
 
     /**
+     * User's goods.
+     *
      * @var \Processing\Objects\Entity\GoodsItem
      */
     protected $goodsList;
 
     /**
+     * User language.
+     *
      * @var string
      */
     protected $languageCode;
 
     /**
+     * Merchant additional information.
+     *
      * @var \Processing\Objects\Entity\AdditionalInformation
      */
     protected $merchantAdditionalInformationList;
 
     /**
+     * Merchant identifier.
+     *
      * @var string
      */
     protected $merchantId;
 
     /**
+     * URL user would be redirected to.
+     *
      * @var string
      */
     protected $returnURL;
 
     /**
+     * Terminal identifier.
+     *
      * @var string
      */
     protected $terminalId;
 
     /**
+     * Transaction amount.
+     *
      * @var string
      */
     protected $totalAmount;
 
     /**
+     * Merchant local date and time.
+     *
      * @var string
      */
     protected $merchantLocalDateTime;
 
     /**
+     * Client's name.
+     *
      * @var string
      */
     protected $purchaserName;
 
     /**
+     * Client'd phone.
+     *
      * @var string
      */
     protected $purchaserPhone;
 
     /**
+     * Client's e-mail.
+     *
      * @var string
      */
     protected $purchaserEmail;
 
     /**
+     * Order identifier.
+     *
      * @var string
      */
     protected $orderId;
 
     /**
+     * Set billing address.
+     *
      * @param $billingAddress
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -95,6 +129,8 @@ class TransactionDetails
     }
 
     /**
+     * Get billing address.
+     *
      * @return \Processing\Objects\Entity\Address
      */
     public function getBillingAddress()
@@ -103,6 +139,8 @@ class TransactionDetails
     }
 
     /**
+     * Set currency code.
+     *
      * @param $currencyCode
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -114,6 +152,8 @@ class TransactionDetails
     }
 
     /**
+     * Get currency code.
+     *
      * @return int
      */
     public function getCurrencyCode()
@@ -122,6 +162,8 @@ class TransactionDetails
     }
 
     /**
+     * Set customer reference.
+     *
      * @param $customerReference
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -133,6 +175,8 @@ class TransactionDetails
     }
 
     /**
+     * Get customer reference.
+     *
      * @return string
      */
     public function getCustomerReference()
@@ -141,6 +185,8 @@ class TransactionDetails
     }
 
     /**
+     * Set transaction description.
+     *
      * @param $description
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -152,6 +198,8 @@ class TransactionDetails
     }
 
     /**
+     * Get transaction description.
+     *
      * @return string
      */
     public function getDescription()
@@ -160,6 +208,8 @@ class TransactionDetails
     }
 
     /**
+     * Set goods.
+     *
      * @param $goodsList
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -171,6 +221,8 @@ class TransactionDetails
     }
 
     /**
+     * Get goods.
+     *
      * @return \Processing\Objects\Entity\GoodsItem
      */
     public function getGoodsList()
@@ -179,6 +231,8 @@ class TransactionDetails
     }
 
     /**
+     * Set language code.
+     *
      * @param $languageCode
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -190,6 +244,8 @@ class TransactionDetails
     }
 
     /**
+     * Get language code.
+     *
      * @return string
      */
     public function getLanguageCode()
@@ -198,6 +254,8 @@ class TransactionDetails
     }
 
     /**
+     * Set merchant additional information.
+     *
      * @param $merchantAdditionalInformationList
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -209,6 +267,8 @@ class TransactionDetails
     }
 
     /**
+     * Get merchant additional information.
+     *
      * @return \Processing\Objects\Entity\AdditionalInformation
      */
     public function getMerchantAdditionalInformationList()
@@ -217,6 +277,8 @@ class TransactionDetails
     }
 
     /**
+     * Set merchant identifier.
+     *
      * @param $merchantId
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -228,6 +290,8 @@ class TransactionDetails
     }
 
     /**
+     * Get merchant identifier.
+     *
      * @return string
      */
     public function getMerchantId()
@@ -236,6 +300,8 @@ class TransactionDetails
     }
 
     /**
+     * Set merchant local date and time.
+     *
      * @param $merchantLocalDateTime
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -247,6 +313,8 @@ class TransactionDetails
     }
 
     /**
+     * Get merchant local date and time.
+     *
      * @return string
      */
     public function getMerchantLocalDateTime()
@@ -255,6 +323,8 @@ class TransactionDetails
     }
 
     /**
+     * Set order identifier.
+     *
      * @param $orderId
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -266,6 +336,8 @@ class TransactionDetails
     }
 
     /**
+     * Get order identifier.
+     *
      * @return string
      */
     public function getOrderId()
@@ -274,6 +346,8 @@ class TransactionDetails
     }
 
     /**
+     * Set client e-mail.
+     *
      * @param $purchaserEmail
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -285,6 +359,8 @@ class TransactionDetails
     }
 
     /**
+     * Get client e-mail.
+     *
      * @return string
      */
     public function getPurchaserEmail()
@@ -293,6 +369,8 @@ class TransactionDetails
     }
 
     /**
+     * Set client name.
+     *
      * @param $purchaserName
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -304,6 +382,8 @@ class TransactionDetails
     }
 
     /**
+     * Get client name.
+     *
      * @return string
      */
     public function getPurchaserName()
@@ -312,6 +392,8 @@ class TransactionDetails
     }
 
     /**
+     * Set client phone.
+     *
      * @param $purchaserPhone
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -323,6 +405,8 @@ class TransactionDetails
     }
 
     /**
+     * Get client phone.
+     *
      * @return string
      */
     public function getPurchaserPhone()
@@ -331,6 +415,8 @@ class TransactionDetails
     }
 
     /**
+     * Set return URL.
+     *
      * @param $returnURL
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -342,6 +428,8 @@ class TransactionDetails
     }
 
     /**
+     * Get return URL.
+     *
      * @return string
      */
     public function getReturnURL()
@@ -350,6 +438,8 @@ class TransactionDetails
     }
 
     /**
+     * Set terminal identifier.
+     *
      * @param $terminalId
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -361,6 +451,8 @@ class TransactionDetails
     }
 
     /**
+     * Get terminal identifier.
+     *
      * @return string
      */
     public function getTerminalId()
@@ -369,6 +461,8 @@ class TransactionDetails
     }
 
     /**
+     * Set transaction amount.
+     *
      * @param $totalAmount
      * @return \Processing\Objects\Entity\TransactionDetails
      */
@@ -380,11 +474,12 @@ class TransactionDetails
     }
 
     /**
+     * Get transaction amount.
+     *
      * @return string
      */
     public function getTotalAmount()
     {
         return $this->totalAmount;
     }
-
 }

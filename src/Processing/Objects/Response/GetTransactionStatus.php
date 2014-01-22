@@ -3,6 +3,9 @@ namespace Processing\Objects\Response;
 
 use Processing\Objects\Entity\StoredTransactionStatus;
 
+/**
+ * Get transaction status response.
+ */
 class GetTransactionStatus extends Base
 {
     /**

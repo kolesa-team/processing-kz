@@ -4,9 +4,14 @@ namespace Processing;
 use Processing\Objects\Request;
 use Processing\Objects\Response;
 
+/**
+ * Processing.kz SOAP clint.
+ */
 class Client extends \SoapClient
 {
     /**
+     * Default options for SOAP API requests.
+     *
      * @var array
      */
     protected $defaults = [
@@ -42,7 +47,7 @@ class Client extends \SoapClient
     }
 
     /**
-     *
+     * Begin transaction.
      *
      * @param  \Processing\Objects\Request\StartTransaction  $parameters
      * @return \Processing\Objects\Response\StartTransaction
@@ -54,7 +59,7 @@ class Client extends \SoapClient
     }
 
     /**
-     *
+     * Revert transaction.
      *
      * @param  \Processing\Objects\Request\RefundTransaction  $parameters
      * @return \Processing\Objects\Response\RefundTransaction
@@ -65,6 +70,8 @@ class Client extends \SoapClient
     }
 
     /**
+     * Get API version.
+     *
      * @return \Processing\Objects\Response\GetVersion
      */
     public function getVersion()
@@ -73,6 +80,8 @@ class Client extends \SoapClient
     }
 
     /**
+     * Get status of transaction.
+     *
      * @param  \Processing\Objects\Request\GetTransactionStatus  $parameters
      * @return \Processing\Objects\Response\GetTransactionStatus
      */
@@ -82,7 +91,7 @@ class Client extends \SoapClient
     }
 
     /**
-     *
+     * Mark transaction complete.
      *
      * @param  \Processing\Objects\Request\CompleteTransaction  $parameters
      * @return \Processing\Objects\Response\CompleteTransaction
@@ -93,6 +102,8 @@ class Client extends \SoapClient
     }
 
     /**
+     * Get SOAP to PHP class mapping.
+     *
      * @return array
      */
     protected function getClassMap()
