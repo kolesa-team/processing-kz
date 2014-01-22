@@ -26,7 +26,7 @@ class Client extends \SoapClient
             ? 'https://test.processing.kz/CNPMerchantWebServices/CNPMerchantWebService.wsdl'
             : $wsdl);
 
-        $options = array_merge($options, [
+        $options = array_merge([
             'connection_timeout' => 60,
             'cache_wsdl'         => WSDL_CACHE_MEMORY,
             'trace'              => 1,
@@ -34,7 +34,7 @@ class Client extends \SoapClient
             'encoding'           => 'UTF-8',
             'exceptions'         => true,
             'location'           => 'https://test.processing.kz/CNPMerchantWebServices/services/CNPMerchantWebService',
-        ]);
+        ], $options);
 
         $options['classmap'] = $this->getClassMap();
 
