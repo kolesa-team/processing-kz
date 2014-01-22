@@ -5,7 +5,7 @@ use Processing\Objects\Request;
 use Processing\Objects\Response;
 
 /**
- * Processing.kz SOAP clint.
+ * Processing.kz SOAP API client.
  */
 class Client extends \SoapClient
 {
