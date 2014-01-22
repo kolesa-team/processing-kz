@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Response;
+namespace ProcessingKz\Objects\Response;
 
 /**
  * Get version response.

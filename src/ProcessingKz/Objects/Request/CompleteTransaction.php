@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Request;
+namespace ProcessingKz\Objects\Request;
 
 /**
  * Complete transaction request.
@@ -37,8 +37,8 @@ class CompleteTransaction extends Base
     /**
      * Set merchant identifier.
      *
-     * @param  string                                          $merchantId
-     * @return \Processing\Objects\Request\CompleteTransaction
+     * @param  string                                            $merchantId
+     * @return \ProcessingKz\Objects\Request\CompleteTransaction
      */
     public function setMerchantId($merchantId)
     {
@@ -60,8 +60,8 @@ class CompleteTransaction extends Base
     /**
      * Set override amount.
      *
-     * @param  string                                          $overrideAmount
-     * @return \Processing\Objects\Request\CompleteTransaction
+     * @param  string                                            $overrideAmount
+     * @return \ProcessingKz\Objects\Request\CompleteTransaction
      */
     public function setOverrideAmount($overrideAmount)
     {
@@ -83,8 +83,8 @@ class CompleteTransaction extends Base
     /**
      * Set reference number.
      *
-     * @param  string                                          $referenceNr
-     * @return \Processing\Objects\Request\CompleteTransaction
+     * @param  string                                            $referenceNr
+     * @return \ProcessingKz\Objects\Request\CompleteTransaction
      */
     public function setReferenceNr($referenceNr)
     {
@@ -106,8 +106,8 @@ class CompleteTransaction extends Base
     /**
      * Set success status.
      *
-     * @param  boolean                                         $transactionSuccess
-     * @return \Processing\Objects\Request\CompleteTransaction
+     * @param  boolean                                           $transactionSuccess
+     * @return \ProcessingKz\Objects\Request\CompleteTransaction
      */
     public function setTransactionSuccess($transactionSuccess)
     {

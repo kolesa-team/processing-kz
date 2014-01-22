@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Entity;
+namespace ProcessingKz\Objects\Entity;
 
 /**
  * Class represents stored transaction status.
@@ -9,7 +9,7 @@ class StoredTransactionStatus
     /**
      * Transaction's additional information.
      *
-     * @var \Processing\Objects\Entity\AdditionalInformation
+     * @var \ProcessingKz\Objects\Entity\AdditionalInformation
      */
     protected $additionalInformation;
 
@@ -51,7 +51,7 @@ class StoredTransactionStatus
     /**
      * Goods chosen by user.
      *
-     * @var \Processing\Objects\Entity\GoodsItem
+     * @var \ProcessingKz\Objects\Entity\GoodsItem
      */
     protected $goods;
 
@@ -72,8 +72,8 @@ class StoredTransactionStatus
     /**
      * Set additional information.
      *
-     * @param  \Processing\Objects\Entity\AdditionalInformation   $additionalInformation
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  \ProcessingKz\Objects\Entity\AdditionalInformation   $additionalInformation
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setAdditionalInformation($additionalInformation)
     {
@@ -85,7 +85,7 @@ class StoredTransactionStatus
     /**
      * Get additional information.
      *
-     * @return \Processing\Objects\Entity\AdditionalInformation
+     * @return \ProcessingKz\Objects\Entity\AdditionalInformation
      */
     public function getAdditionalInformation()
     {
@@ -95,8 +95,8 @@ class StoredTransactionStatus
     /**
      * Set authorised amount.
      *
-     * @param  string                                             $amountAuthorised
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  string                                               $amountAuthorised
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setAmountAuthorised($amountAuthorised)
     {
@@ -118,8 +118,8 @@ class StoredTransactionStatus
     /**
      * Set amount refunded.
      *
-     * @param  string                                             $amountRefunded
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  string                                               $amountRefunded
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setAmountRefunded($amountRefunded)
     {
@@ -141,8 +141,8 @@ class StoredTransactionStatus
     /**
      * Set amount requested.
      *
-     * @param  string                                             $amountRequested
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  string                                               $amountRequested
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setAmountRequested($amountRequested)
     {
@@ -164,8 +164,8 @@ class StoredTransactionStatus
     /**
      * Set amount settled.
      *
-     * @param  string                                             $amountSettled
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  string                                               $amountSettled
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setAmountSettled($amountSettled)
     {
@@ -187,8 +187,8 @@ class StoredTransactionStatus
     /**
      * Set authorisation code.
      *
-     * @param  string                                             $authCode
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  string                                               $authCode
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setAuthCode($authCode)
     {
@@ -210,8 +210,8 @@ class StoredTransactionStatus
     /**
      * Set goods.
      *
-     * @param  \Processing\Objects\Entity\GoodsItem               $goods
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  \ProcessingKz\Objects\Entity\GoodsItem               $goods
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setGoods($goods)
     {
@@ -223,7 +223,7 @@ class StoredTransactionStatus
     /**
      * Get goods.
      *
-     * @return \Processing\Objects\Entity\GoodsItem
+     * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
     public function getGoods()
     {
@@ -233,8 +233,8 @@ class StoredTransactionStatus
     /**
      * Set currency code.
      *
-     * @param  string                                             $transactionCurrencyCode
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  string                                               $transactionCurrencyCode
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setTransactionCurrencyCode($transactionCurrencyCode)
     {
@@ -256,8 +256,8 @@ class StoredTransactionStatus
     /**
      * Set transaction status.
      *
-     * @param  string                                             $transactionStatus
-     * @return \Processing\Objects\Entity\StoredTransactionStatus
+     * @param  string                                               $transactionStatus
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
      */
     public function setTransactionStatus($transactionStatus)
     {

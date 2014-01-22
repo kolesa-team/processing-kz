@@ -1,12 +1,12 @@
 <?php
-namespace Processing\Objects\Entity;
+namespace ProcessingKz\Objects\Entity;
 
 class TransactionDetails
 {
     /**
      * Billing address.
      *
-     * @var \Processing\Objects\Entity\Address
+     * @var \ProcessingKz\Objects\Entity\Address
      */
     protected $billingAddress;
 
@@ -34,7 +34,7 @@ class TransactionDetails
     /**
      * User's goods.
      *
-     * @var \Processing\Objects\Entity\GoodsItem
+     * @var \ProcessingKz\Objects\Entity\GoodsItem
      */
     protected $goodsList;
 
@@ -48,7 +48,7 @@ class TransactionDetails
     /**
      * Merchant additional information.
      *
-     * @var \Processing\Objects\Entity\AdditionalInformation
+     * @var \ProcessingKz\Objects\Entity\AdditionalInformation
      */
     protected $merchantAdditionalInformationList;
 
@@ -118,8 +118,8 @@ class TransactionDetails
     /**
      * Set billing address.
      *
-     * @param $billingAddress
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  \ProcessingKz\Objects\Entity\Address            $billingAddress
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setBillingAddress(Address $billingAddress)
     {
@@ -131,7 +131,7 @@ class TransactionDetails
     /**
      * Get billing address.
      *
-     * @return \Processing\Objects\Entity\Address
+     * @return \ProcessingKz\Objects\Entity\Address
      */
     public function getBillingAddress()
     {
@@ -141,8 +141,8 @@ class TransactionDetails
     /**
      * Set currency code.
      *
-     * @param $currencyCode
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  integer                                         $currencyCode
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setCurrencyCode($currencyCode)
     {
@@ -154,7 +154,7 @@ class TransactionDetails
     /**
      * Get currency code.
      *
-     * @return int
+     * @return integer
      */
     public function getCurrencyCode()
     {
@@ -164,8 +164,8 @@ class TransactionDetails
     /**
      * Set customer reference.
      *
-     * @param $customerReference
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $customerReference
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setCustomerReference($customerReference)
     {
@@ -187,8 +187,8 @@ class TransactionDetails
     /**
      * Set transaction description.
      *
-     * @param $description
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $description
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setDescription($description)
     {
@@ -210,8 +210,8 @@ class TransactionDetails
     /**
      * Set goods.
      *
-     * @param $goodsList
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  \ProcessingKz\Objects\Entity\GoodsItem          $goodsList
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setGoodsList(GoodsItem $goodsList)
     {
@@ -223,7 +223,7 @@ class TransactionDetails
     /**
      * Get goods.
      *
-     * @return \Processing\Objects\Entity\GoodsItem
+     * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
     public function getGoodsList()
     {
@@ -233,8 +233,8 @@ class TransactionDetails
     /**
      * Set language code.
      *
-     * @param $languageCode
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $languageCode
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setLanguageCode($languageCode)
     {
@@ -256,8 +256,8 @@ class TransactionDetails
     /**
      * Set merchant additional information.
      *
-     * @param $merchantAdditionalInformationList
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  \ProcessingKz\Objects\Entity\AdditionalInformation $merchantAdditionalInformationList
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setMerchantAdditionalInformationList(AdditionalInformation $merchantAdditionalInformationList)
     {
@@ -269,7 +269,7 @@ class TransactionDetails
     /**
      * Get merchant additional information.
      *
-     * @return \Processing\Objects\Entity\AdditionalInformation
+     * @return \ProcessingKz\Objects\Entity\AdditionalInformation
      */
     public function getMerchantAdditionalInformationList()
     {
@@ -279,8 +279,8 @@ class TransactionDetails
     /**
      * Set merchant identifier.
      *
-     * @param $merchantId
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $merchantId
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setMerchantId($merchantId)
     {
@@ -302,8 +302,8 @@ class TransactionDetails
     /**
      * Set merchant local date and time.
      *
-     * @param $merchantLocalDateTime
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $merchantLocalDateTime
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setMerchantLocalDateTime($merchantLocalDateTime)
     {
@@ -325,8 +325,8 @@ class TransactionDetails
     /**
      * Set order identifier.
      *
-     * @param $orderId
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $orderId
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setOrderId($orderId)
     {
@@ -348,8 +348,8 @@ class TransactionDetails
     /**
      * Set client e-mail.
      *
-     * @param $purchaserEmail
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $purchaserEmail
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setPurchaserEmail($purchaserEmail)
     {
@@ -371,8 +371,8 @@ class TransactionDetails
     /**
      * Set client name.
      *
-     * @param $purchaserName
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $purchaserName
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setPurchaserName($purchaserName)
     {
@@ -394,8 +394,8 @@ class TransactionDetails
     /**
      * Set client phone.
      *
-     * @param $purchaserPhone
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $purchaserPhone
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setPurchaserPhone($purchaserPhone)
     {
@@ -417,8 +417,8 @@ class TransactionDetails
     /**
      * Set return URL.
      *
-     * @param $returnURL
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $returnURL
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setReturnURL($returnURL)
     {
@@ -440,8 +440,8 @@ class TransactionDetails
     /**
      * Set terminal identifier.
      *
-     * @param $terminalId
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $terminalId
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setTerminalId($terminalId)
     {
@@ -463,8 +463,8 @@ class TransactionDetails
     /**
      * Set transaction amount.
      *
-     * @param $totalAmount
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @param  string                                          $totalAmount
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function setTotalAmount($totalAmount)
     {

@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Request;
+namespace ProcessingKz\Objects\Request;
 
 /**
  * Refund transaction request.
@@ -44,22 +44,22 @@ class RefundTransaction extends Base
     /**
      * Goods to refund.
      *
-     * @var \Processing\Objects\Entity\GoodsItem
+     * @var \ProcessingKz\Objects\Entity\GoodsItem
      */
     protected $goodsToRefund;
 
     /**
      * Transaction additional information.
      *
-     * @var \Processing\Objects\Entity\AdditionalInformation
+     * @var \ProcessingKz\Objects\Entity\AdditionalInformation
      */
     protected $additionalInformation;
 
     /**
      * Set additional information.
      *
-     * @param  \Processing\Objects\Entity\AdditionalInformation $additionalInformation
-     * @return \Processing\Objects\Request\RefundTransaction
+     * @param  \ProcessingKz\Objects\Entity\AdditionalInformation $additionalInformation
+     * @return \ProcessingKz\Objects\Request\RefundTransaction
      */
     public function setAdditionalInformation($additionalInformation)
     {
@@ -71,7 +71,7 @@ class RefundTransaction extends Base
     /**
      * Get additional information.
      *
-     * @return \Processing\Objects\Entity\AdditionalInformation
+     * @return \ProcessingKz\Objects\Entity\AdditionalInformation
      */
     public function getAdditionalInformation()
     {
@@ -81,8 +81,8 @@ class RefundTransaction extends Base
     /**
      * Set transaction description.
      *
-     * @param  string                                        $description
-     * @return \Processing\Objects\Request\RefundTransaction
+     * @param  string                                          $description
+     * @return \ProcessingKz\Objects\Request\RefundTransaction
      */
     public function setDescription($description)
     {
@@ -104,8 +104,8 @@ class RefundTransaction extends Base
     /**
      * Set goods to refund.
      *
-     * @param  \Processing\Objects\Entity\GoodsItem          $goodsToRefund
-     * @return \Processing\Objects\Request\RefundTransaction
+     * @param  \ProcessingKz\Objects\Entity\GoodsItem          $goodsToRefund
+     * @return \ProcessingKz\Objects\Request\RefundTransaction
      */
     public function setGoodsToRefund($goodsToRefund)
     {
@@ -117,7 +117,7 @@ class RefundTransaction extends Base
     /**
      * Get goods to refund.
      *
-     * @return \Processing\Objects\Entity\GoodsItem
+     * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
     public function getGoodsToRefund()
     {
@@ -127,8 +127,8 @@ class RefundTransaction extends Base
     /**
      * Set merchant identifier.
      *
-     * @param  string                                        $merchantId
-     * @return \Processing\Objects\Request\RefundTransaction
+     * @param  string                                          $merchantId
+     * @return \ProcessingKz\Objects\Request\RefundTransaction
      */
     public function setMerchantId($merchantId)
     {
@@ -150,8 +150,8 @@ class RefundTransaction extends Base
     /**
      * Set password.
      *
-     * @param  string                                        $password
-     * @return \Processing\Objects\Request\RefundTransaction
+     * @param  string                                          $password
+     * @return \ProcessingKz\Objects\Request\RefundTransaction
      */
     public function setPassword($password)
     {
@@ -173,8 +173,8 @@ class RefundTransaction extends Base
     /**
      * Set reference number.
      *
-     * @param  string                                        $referenceNr
-     * @return \Processing\Objects\Request\RefundTransaction
+     * @param  string                                          $referenceNr
+     * @return \ProcessingKz\Objects\Request\RefundTransaction
      */
     public function setReferenceNr($referenceNr)
     {
@@ -196,8 +196,8 @@ class RefundTransaction extends Base
     /**
      * Set amount to refund.
      *
-     * @param  string                                        $refundAmount
-     * @return \Processing\Objects\Request\RefundTransaction
+     * @param  string                                          $refundAmount
+     * @return \ProcessingKz\Objects\Request\RefundTransaction
      */
     public function setRefundAmount($refundAmount)
     {

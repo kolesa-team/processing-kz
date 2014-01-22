@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Request;
+namespace ProcessingKz\Objects\Request;
 
 /**
  * Get transaction status request.
@@ -23,8 +23,8 @@ class GetTransactionStatus extends Base
     /**
      * Set merchant identifier.
      *
-     * @param  string                                           $merchantId
-     * @return \Processing\Objects\Request\GetTransactionStatus
+     * @param  string                                             $merchantId
+     * @return \ProcessingKz\Objects\Request\GetTransactionStatus
      */
     public function setMerchantId($merchantId)
     {
@@ -46,8 +46,8 @@ class GetTransactionStatus extends Base
     /**
      * Set reference number.
      *
-     * @param  string                                           $referenceNr
-     * @return \Processing\Objects\Request\GetTransactionStatus
+     * @param  string                                             $referenceNr
+     * @return \ProcessingKz\Objects\Request\GetTransactionStatus
      */
     public function setReferenceNr($referenceNr)
     {

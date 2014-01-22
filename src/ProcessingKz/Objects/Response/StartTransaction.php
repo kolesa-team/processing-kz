@@ -1,7 +1,7 @@
 <?php
-namespace Processing\Objects\Response;
+namespace ProcessingKz\Objects\Response;
 
-use Processing\Objects\Entity\StartTransactionResult;
+use ProcessingKz\Objects\Entity\StartTransactionResult;
 
 /**
  * Start transaction response.
@@ -11,8 +11,8 @@ class StartTransaction extends Base
     /**
      * {@inheritdoc}
      *
-     * @param  \Processing\Objects\Entity\StartTransactionResult $return
-     * @return \Processing\Objects\Response\StartTransaction
+     * @param  \ProcessingKz\Objects\Entity\StartTransactionResult $return
+     * @return \ProcessingKz\Objects\Response\StartTransaction
      */
     public function setReturn(StartTransactionResult $return)
     {

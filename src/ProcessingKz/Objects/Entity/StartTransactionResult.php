@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Entity;
+namespace ProcessingKz\Objects\Entity;
 
 /**
  * Class represents result of transaction start command.
@@ -37,8 +37,8 @@ class StartTransactionResult
     /**
      * Set customer's reference.
      *
-     * @param  string                                            $customerReference
-     * @return \Processing\Objects\Entity\StartTransactionResult
+     * @param  string                                              $customerReference
+     * @return \ProcessingKz\Objects\Entity\StartTransactionResult
      */
     public function setCustomerReference($customerReference)
     {
@@ -60,8 +60,8 @@ class StartTransactionResult
     /**
      * Set error description.
      *
-     * @param  string                                            $errorDescription
-     * @return \Processing\Objects\Entity\StartTransactionResult
+     * @param  string                                              $errorDescription
+     * @return \ProcessingKz\Objects\Entity\StartTransactionResult
      */
     public function setErrorDescription($errorDescription)
     {
@@ -83,8 +83,8 @@ class StartTransactionResult
     /**
      * Set redirect URL.
      *
-     * @param  string                                            $redirectURL
-     * @return \Processing\Objects\Entity\StartTransactionResult
+     * @param  string                                              $redirectURL
+     * @return \ProcessingKz\Objects\Entity\StartTransactionResult
      */
     public function setRedirectURL($redirectURL)
     {
@@ -106,8 +106,8 @@ class StartTransactionResult
     /**
      * Set success status.
      *
-     * @param  boolean                                           $success
-     * @return \Processing\Objects\Entity\StartTransactionResult
+     * @param  boolean                                             $success
+     * @return \ProcessingKz\Objects\Entity\StartTransactionResult
      */
     public function setSuccess($success)
     {

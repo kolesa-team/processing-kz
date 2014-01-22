@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Response;
+namespace ProcessingKz\Objects\Response;
 
 /**
  * Base response class.
@@ -16,8 +16,8 @@ abstract class Base
     /**
      * Set return code/status.
      *
-     * @param  mixed                             $return
-     * @return \Processing\Objects\Response\Base
+     * @param  mixed                               $return
+     * @return \ProcessingKz\Objects\Response\Base
      */
     public function setReturn($return)
     {

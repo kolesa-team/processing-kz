@@ -1,11 +1,11 @@
 <?php
-namespace Processing;
+namespace ProcessingKz;
 
-use Processing\Objects\Request;
-use Processing\Objects\Response;
+use ProcessingKz\Objects\Request;
+use ProcessingKz\Objects\Response;
 
 /**
- * Processing.kz SOAP API client.
+ * ProcessingKz.kz SOAP API client.
  */
 class Client extends \SoapClient
 {
@@ -49,8 +49,8 @@ class Client extends \SoapClient
     /**
      * Begin transaction.
      *
-     * @param  \Processing\Objects\Request\StartTransaction  $parameters
-     * @return \Processing\Objects\Response\StartTransaction
+     * @param  \ProcessingKz\Objects\Request\StartTransaction  $parameters
+     * @return \ProcessingKz\Objects\Response\StartTransaction
      */
     public function startTransaction(Request\StartTransaction $parameters)
     {
@@ -61,8 +61,8 @@ class Client extends \SoapClient
     /**
      * Revert transaction.
      *
-     * @param  \Processing\Objects\Request\RefundTransaction  $parameters
-     * @return \Processing\Objects\Response\RefundTransaction
+     * @param  \ProcessingKz\Objects\Request\RefundTransaction  $parameters
+     * @return \ProcessingKz\Objects\Response\RefundTransaction
      */
     public function refundTransaction(Request\RefundTransaction $parameters)
     {
@@ -72,7 +72,7 @@ class Client extends \SoapClient
     /**
      * Get API version.
      *
-     * @return \Processing\Objects\Response\GetVersion
+     * @return \ProcessingKz\Objects\Response\GetVersion
      */
     public function getVersion()
     {
@@ -82,8 +82,8 @@ class Client extends \SoapClient
     /**
      * Get status of transaction.
      *
-     * @param  \Processing\Objects\Request\GetTransactionStatus  $parameters
-     * @return \Processing\Objects\Response\GetTransactionStatus
+     * @param  \ProcessingKz\Objects\Request\GetTransactionStatus  $parameters
+     * @return \ProcessingKz\Objects\Response\GetTransactionStatus
      */
     public function getTransactionStatus(Request\GetTransactionStatus $parameters)
     {
@@ -93,8 +93,8 @@ class Client extends \SoapClient
     /**
      * Mark transaction complete.
      *
-     * @param  \Processing\Objects\Request\CompleteTransaction  $parameters
-     * @return \Processing\Objects\Response\CompleteTransaction
+     * @param  \ProcessingKz\Objects\Request\CompleteTransaction  $parameters
+     * @return \ProcessingKz\Objects\Response\CompleteTransaction
      */
     public function completeTransaction(Request\CompleteTransaction $parameters)
     {

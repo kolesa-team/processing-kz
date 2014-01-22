@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Entity;
+namespace ProcessingKz\Objects\Entity;
 
 /**
  * Class represents goods item.
@@ -37,8 +37,8 @@ class GoodsItem
     /**
      * Set amount of goods.
      *
-     * @param $amount
-     * @return \Processing\Objects\Entity\GoodsItem
+     * @param  string                                 $amount
+     * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
     public function setAmount($amount)
     {
@@ -60,8 +60,8 @@ class GoodsItem
     /**
      * Set currency code.
      *
-     * @param $currencyCode
-     * @return \Processing\Objects\Entity\GoodsItem
+     * @param  integer                                $currencyCode
+     * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
     public function setCurrencyCode($currencyCode)
     {
@@ -83,8 +83,8 @@ class GoodsItem
     /**
      * Set merchant's goods identifier.
      *
-     * @param $merchantsGoodsId
-     * @return \Processing\Objects\Entity\GoodsItem
+     * @param  string                                 $merchantsGoodsId
+     * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
     public function setMerchantsGoodsID($merchantsGoodsId)
     {
@@ -106,8 +106,8 @@ class GoodsItem
     /**
      * Set name of goods.
      *
-     * @param $nameOfGoods
-     * @return \Processing\Objects\Entity\GoodsItem
+     * @param  string                                 $nameOfGoods
+     * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
     public function setNameOfGoods($nameOfGoods)
     {

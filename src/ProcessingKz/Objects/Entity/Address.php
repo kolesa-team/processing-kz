@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Entity;
+namespace ProcessingKz\Objects\Entity;
 
 /**
  * Class represents post address.
@@ -51,8 +51,8 @@ class Address
     /**
      * Set first line of address.
      *
-     * @param $addressLine1
-     * @return \Processing\Objects\Entity\Address
+     * @param  string                               $addressLine1
+     * @return \ProcessingKz\Objects\Entity\Address
      */
     public function setAddressLine1($addressLine1)
     {
@@ -74,8 +74,8 @@ class Address
     /**
      * Set second line of address.
      *
-     * @param $addressLine2
-     * @return \Processing\Objects\Entity\Address
+     * @param  string                               $addressLine2
+     * @return \ProcessingKz\Objects\Entity\Address
      */
     public function setAddressLine2($addressLine2)
     {
@@ -97,8 +97,8 @@ class Address
     /**
      * Set city.
      *
-     * @param $city
-     * @return \Processing\Objects\Entity\Address
+     * @param  string                               $city
+     * @return \ProcessingKz\Objects\Entity\Address
      */
     public function setCity($city)
     {
@@ -120,8 +120,8 @@ class Address
     /**
      * Set country.
      *
-     * @param $country
-     * @return \Processing\Objects\Entity\Address
+     * @param  string                               $country
+     * @return \ProcessingKz\Objects\Entity\Address
      */
     public function setCountry($country)
     {
@@ -143,8 +143,8 @@ class Address
     /**
      * Set county.
      *
-     * @param $county
-     * @return \Processing\Objects\Entity\Address
+     * @param  string                               $county
+     * @return \ProcessingKz\Objects\Entity\Address
      */
     public function setCounty($county)
     {
@@ -166,8 +166,8 @@ class Address
     /**
      * Set ZIP-code.
      *
-     * @param $zip
-     * @return \Processing\Objects\Entity\Address
+     * @param  string                               $zip
+     * @return \ProcessingKz\Objects\Entity\Address
      */
     public function setZip($zip)
     {

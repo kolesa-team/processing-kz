@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Request;
+namespace ProcessingKz\Objects\Request;
 
 /**
  * Start transaction request.
@@ -9,15 +9,15 @@ class StartTransaction extends Base
     /**
      * Transaction details.
      *
-     * @var \Processing\Objects\Entity\TransactionDetails
+     * @var \ProcessingKz\Objects\Entity\TransactionDetails
      */
     protected $transaction;
 
     /**
      * Set transaction details.
      *
-     * @param  \Processing\Objects\Entity\TransactionDetails $transaction
-     * @return \Processing\Objects\Request\StartTransaction
+     * @param  \ProcessingKz\Objects\Entity\TransactionDetails $transaction
+     * @return \ProcessingKz\Objects\Request\StartTransaction
      */
     public function setTransaction($transaction)
     {
@@ -29,7 +29,7 @@ class StartTransaction extends Base
     /**
      * Get transaction details.
      *
-     * @return \Processing\Objects\Entity\TransactionDetails
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
     public function getTransaction()
     {

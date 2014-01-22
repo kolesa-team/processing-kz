@@ -1,5 +1,5 @@
 {
-    "name": "processing/client",
+    "name": "iborodikhin/ProcessingKz",
     "description": "Processing.kz SOAP client",
     "authors": [
         {
@@ -9,6 +9,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-
+        "php": ">=5.4.0",
+        "ext-soap": "*"
     }
 }

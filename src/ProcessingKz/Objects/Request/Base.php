@@ -1,5 +1,5 @@
 <?php
-namespace Processing\Objects\Request;
+namespace ProcessingKz\Objects\Request;
 
 /**
  * Base request class.
