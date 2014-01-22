@@ -1,0 +1,14 @@
+{
+    "name": "processing/client",
+    "description": "Processing.kz SOAP client",
+    "authors": [
+        {
+            "name": "Igor Borodikhin",
+            "email": "iborodikhin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}
