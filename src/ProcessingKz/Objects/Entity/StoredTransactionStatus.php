@@ -7,6 +7,56 @@ namespace ProcessingKz\Objects\Entity;
 class StoredTransactionStatus
 {
     /**
+     * Transaction not found.
+     */
+    const NO_SUCH_TRANSACTION = 'NO_SUCH_TRANSACTION';
+
+    /**
+     * Waiting for purchaser input.
+     */
+    const PENDING_CUSTOMER_INPUT = 'PENDING_CUSTOMER_INPUT';
+
+    /**
+     * Waiting bank to authorise transaction.
+     */
+    const PENDING_AUTH_RESULT = 'PENDING_AUTH_RESULT';
+
+    /**
+     * Bank had authorised transaction and blocked amount.
+     */
+    const AUTHORISED = 'AUTHORISED';
+
+    /**
+     * Bank declined request.
+     */
+    const DECLINED = 'DECLINED';
+
+    /**
+     * Authorisation reversed.
+     */
+    const REVERSED = 'REVERSED';
+
+    /**
+     * Transaction paid.
+     */
+    const PAID = 'PAID';
+
+    /**
+     * Transaction refunded.
+     */
+    const REFUNDED = 'REFUNDED';
+
+    /**
+     * Provided MID is invalid.
+     */
+    const INVALID_MID = 'INVALID_MID';
+
+    /**
+     * Provided MID is disabled.
+     */
+    const MID_DISABLED = 'MID_DISABLED';
+
+    /**
      * Transaction's additional information.
      *
      * @var \ProcessingKz\Objects\Entity\AdditionalInformation

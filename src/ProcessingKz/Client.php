@@ -10,6 +10,26 @@ use ProcessingKz\Objects\Response;
 class Client extends \SoapClient
 {
     /**
+     * Currency code for KZT.
+     */
+    const CURRENCY_KZT = 398;
+
+    /**
+     * Russian language code.
+     */
+    const LANGUAGE_RU = 'ru';
+
+    /**
+     * Kazakh language code.
+     */
+    const LANGUAGE_KZ = 'kz';
+
+    /**
+     * English language code.
+     */
+    const LANGUAGE_EN = 'en';
+
+    /**
      * Default options for SOAP API requests.
      *
      * @var array
