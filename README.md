@@ -40,7 +40,7 @@ Usage example
 
         // Get status of transaction.
         $status = new \ProcessingKz\Objects\Request\GetTransactionStatus();
-        $status>setMerchantId("000000000000001")
+        $status->setMerchantId("000000000000001")
             ->setReferenceNr($reference);
         $statusResult = $client->getTransactionStatus($status);
     } else {
