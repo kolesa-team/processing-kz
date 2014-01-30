@@ -129,21 +129,21 @@ class Client extends \SoapClient
     protected function getClassMap()
     {
         return [
-            'StartTransactionResult'       => '\Processing\Objects\Entity\StartTransactionResult',
-            'TransactionDetails'           => '\Processing\Objects\Entity\TransactionDetails',
-            'Address'                      => '\Processing\Objects\Entity\Address',
-            'GoodsItem'                    => '\Processing\Objects\Entity\GoodsItem',
-            'AdditionalInformation'        => '\Processing\Objects\Entity\AdditionalInformation',
-            'StoredTransactionStatus'      => '\Processing\Objects\Entity\StoredTransactionStatus',
-            'startTransaction'             => '\Processing\Objects\Request\StartTransaction',
-            'startTransactionResponse'     => '\Processing\Objects\Response\StartTransaction',
-            'refundTransaction'            => '\Processing\Objects\Request\RefundTransaction',
-            'refundTransactionResponse'    => '\Processing\Objects\Response\RefundTransaction',
-            'getVersionResponse'           => '\Processing\Objects\Response\GetVersion',
-            'getTransactionStatus'         => '\Processing\Objects\Request\GetTransactionStatus',
-            'getTransactionStatusResponse' => '\Processing\Objects\Response\GetTransactionStatus',
-            'completeTransaction'          => '\Processing\Objects\Request\CompleteTransaction',
-            'completeTransactionResponse'  => '\Processing\Objects\Response\CompleteTransaction',
+            'StartTransactionResult'       => '\ProcessingKz\Objects\Entity\StartTransactionResult',
+            'TransactionDetails'           => '\ProcessingKz\Objects\Entity\TransactionDetails',
+            'Address'                      => '\ProcessingKz\Objects\Entity\Address',
+            'GoodsItem'                    => '\ProcessingKz\Objects\Entity\GoodsItem',
+            'AdditionalInformation'        => '\ProcessingKz\Objects\Entity\AdditionalInformation',
+            'StoredTransactionStatus'      => '\ProcessingKz\Objects\Entity\StoredTransactionStatus',
+            'startTransaction'             => '\ProcessingKz\Objects\Request\StartTransaction',
+            'startTransactionResponse'     => '\ProcessingKz\Objects\Response\StartTransaction',
+            'refundTransaction'            => '\ProcessingKz\Objects\Request\RefundTransaction',
+            'refundTransactionResponse'    => '\ProcessingKz\Objects\Response\RefundTransaction',
+            'getVersionResponse'           => '\ProcessingKz\Objects\Response\GetVersion',
+            'getTransactionStatus'         => '\ProcessingKz\Objects\Request\GetTransactionStatus',
+            'getTransactionStatusResponse' => '\ProcessingKz\Objects\Response\GetTransactionStatus',
+            'completeTransaction'          => '\ProcessingKz\Objects\Request\CompleteTransaction',
+            'completeTransactionResponse'  => '\ProcessingKz\Objects\Response\CompleteTransaction',
         ];
     }
 }
