@@ -34,10 +34,10 @@ class Client extends \SoapClient
      *
      * @var array
      */
-    protected $defaults = [
+    protected $defaults = array(
         'uri'        => 'https://kz.processing.cnp.merchant_ws/',
         'soapaction' => '',
-    ];
+    );
 
     /**
      * {@inheritdoc}
@@ -45,13 +45,13 @@ class Client extends \SoapClient
      * @param null|string $wsdl
      * @param array       $options
      */
-    public function __construct($wsdl = null, array $options = [])
+    public function __construct($wsdl = null, array $options = array())
     {
         $wsdl = (is_null($wsdl)
             ? 'https://test.processing.kz/CNPMerchantWebServices/CNPMerchantWebService.wsdl'
             : $wsdl);
 
-        $options = array_merge([
+        $options = array_merge(array(
             'connection_timeout' => 60,
             'cache_wsdl'         => WSDL_CACHE_MEMORY,
             'trace'              => 1,
@@ -59,7 +59,7 @@ class Client extends \SoapClient
             'encoding'           => 'UTF-8',
             'exceptions'         => true,
             'location'           => 'https://test.processing.kz/CNPMerchantWebServices/services/CNPMerchantWebService',
-        ], $options);
+        ), $options);
 
         $options['classmap'] = $this->getClassMap();
 
@@ -74,7 +74,7 @@ class Client extends \SoapClient
      */
     public function startTransaction(Request\StartTransaction $parameters)
     {
-        return $this->__soapCall('startTransaction', [$parameters], $this->defaults);
+        return $this->__soapCall('startTransaction', array($parameters), $this->defaults);
 
     }
 
@@ -86,7 +86,7 @@ class Client extends \SoapClient
      */
     public function refundTransaction(Request\RefundTransaction $parameters)
     {
-        return $this->__soapCall('refundTransaction', [$parameters], $this->defaults);
+        return $this->__soapCall('refundTransaction', array($parameters), $this->defaults);
     }
 
     /**
@@ -96,7 +96,7 @@ class Client extends \SoapClient
      */
     public function getVersion()
     {
-        return $this->__soapCall('getVersion', [], $this->defaults);
+        return $this->__soapCall('getVersion', array(), $this->defaults);
     }
 
     /**
@@ -107,7 +107,7 @@ class Client extends \SoapClient
      */
     public function getTransactionStatus(Request\GetTransactionStatus $parameters)
     {
-        return $this->__soapCall('getTransactionStatus', [$parameters], $this->defaults);
+        return $this->__soapCall('getTransactionStatus', array($parameters), $this->defaults);
     }
 
     /**
@@ -118,7 +118,7 @@ class Client extends \SoapClient
      */
     public function completeTransaction(Request\CompleteTransaction $parameters)
     {
-        return $this->__soapCall('completeTransaction', [$parameters], $this->defaults);
+        return $this->__soapCall('completeTransaction', array($parameters), $this->defaults);
     }
 
     /**
@@ -128,7 +128,7 @@ class Client extends \SoapClient
      */
     protected function getClassMap()
     {
-        return [
+        return array(
             'StartTransactionResult'       => '\ProcessingKz\Objects\Entity\StartTransactionResult',
             'TransactionDetails'           => '\ProcessingKz\Objects\Entity\TransactionDetails',
             'Address'                      => '\ProcessingKz\Objects\Entity\Address',
@@ -144,6 +144,6 @@ class Client extends \SoapClient
             'getTransactionStatusResponse' => '\ProcessingKz\Objects\Response\GetTransactionStatus',
             'completeTransaction'          => '\ProcessingKz\Objects\Request\CompleteTransaction',
             'completeTransactionResponse'  => '\ProcessingKz\Objects\Response\CompleteTransaction',
-        ];
+        );
     }
 }
