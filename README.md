@@ -8,18 +8,18 @@ Usage example
 
     $client = new \ProcessingKz\Client();
 
-    // Begin payment transaction («checkout»).
+    // Begin payment transaction ("checkout").
     $details = new \ProcessingKz\Objects\Entity\TransactionDetails();
     $details->setMerchantId("000000000000001")
         ->setTerminalId("TEST TID")
         ->setTotalAmount($total)
-        ->setCurrencyCode(368)
+        ->setCurrencyCode(398)
         ->setDescription("My first transaction")
         ->setReturnURL("/transaction-result")
         ->setGoodsList($_SESSION["basket"])
         ->setLanguageCode("ru")
         ->setMerchantLocalDateTime(date("d.m.Y H:i:s"))
-        ->setOrderId(rand(1,10000))
+        ->setOrderId(rand(1, 10000))
         ->setPurchaserName("IVANOV IVAN")
         ->setPurchaserEmail("purchaser@processing.kz");
 
@@ -44,5 +44,5 @@ Usage example
             ->setReferenceNr($reference);
         $statusResult = $client->getTransactionStatus($status);
     } else {
-        die($result->getReturn()->getErrorDescription());
+        die($startResult->getReturn()->getErrorDescription());
     }
