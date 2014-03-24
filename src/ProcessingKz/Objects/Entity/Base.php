@@ -14,7 +14,7 @@ abstract class Base
     public function toArray()
     {
         $result = array();
-        $fields = get_class_vars(get_called_class());
+        $fields = array_keys(get_class_vars(get_called_class()));
 
         foreach ($fields as $field) {
             $result[$field] = $this->{sprintf('get%s', ucfirst($field))}();
