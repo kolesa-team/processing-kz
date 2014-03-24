@@ -4,7 +4,7 @@ namespace ProcessingKz\Objects\Entity;
 /**
  * Class represents goods item.
  */
-class GoodsItem
+class GoodsItem extends Base
 {
     /**
      * Amount of goods.

@@ -4,7 +4,7 @@ namespace ProcessingKz\Objects\Entity;
 /**
  * Class represents additional information.
  */
-class AdditionalInformation
+class AdditionalInformation extends Base
 {
     /**
      * Key.

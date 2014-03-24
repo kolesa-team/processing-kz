@@ -4,7 +4,7 @@ namespace ProcessingKz\Objects\Entity;
 /**
  * Class represents stored transaction status.
  */
-class StoredTransactionStatus
+class StoredTransactionStatus extends Base
 {
     /**
      * Transaction not found.
@@ -118,6 +118,48 @@ class StoredTransactionStatus
      * @var string
      */
     protected $transactionStatus;
+
+    /**
+     * Order id.
+     *
+     * @var string
+     */
+    protected $orderId;
+
+    /**
+     * Purchaser name.
+     *
+     * @var string
+     */
+    protected $purchaserName;
+
+    /**
+     * Purchaser email.
+     *
+     * @var string
+     */
+    protected $purchaserEmail;
+
+    /**
+     * Purchaser phone.
+     *
+     * @var string
+     */
+    protected $purchaserPhone;
+
+    /**
+     * Merchant local date and time.
+     *
+     * @var string
+     */
+    protected $merchantLocalDateTime;
+
+    /**
+     * Merchant online address;
+     *
+     * @var string
+     */
+    protected $merchantOnlineAddress;
 
     /**
      * Set additional information.
@@ -326,4 +368,141 @@ class StoredTransactionStatus
         return $this->transactionStatus;
     }
 
+    /**
+     * Set order id.
+     *
+     * @param  string                                               $orderId
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
+     */
+    public function setOrderId($orderId)
+    {
+        $this->orderId = $orderId;
+        
+        return $this;
+    }
+
+    /**
+     * Get order id.
+     *
+     * @return string
+     */
+    public function getOrderId()
+    {
+        return $this->orderId;
+    }
+
+    /**
+     * Set purchaser name.
+     *
+     * @param  string                                               $purchaserName
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
+     */
+    public function setPurchaserName($purchaserName)
+    {
+        $this->purchaserName = $purchaserName;
+        
+        return $this;
+    }
+
+    /**
+     * Get purchaser name.
+     *
+     * @return string
+     */
+    public function getPurchaserName()
+    {
+        return $this->purchaserName;
+    }
+
+    /**
+     * Set purchaser email.
+     *
+     * @param  string                                               $purchaserEmail
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
+     */
+    public function setPurchaserEmail($purchaserEmail)
+    {
+        $this->purchaserEmail = $purchaserEmail;
+        
+        return $this;
+    }
+
+    /**
+     * Get purchaser email.
+     *
+     * @return string
+     */
+    public function getPurchaserEmail()
+    {
+        return $this->purchaserEmail;
+    }
+
+    /**
+     * Set purchaser phone.
+     *
+     * @param  string                                               $purchaserPhone
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
+     */
+    public function setPurchaserPhone($purchaserPhone)
+    {
+        $this->purchaserPhone = $purchaserPhone;
+        
+        return $this;
+    }
+
+    /**
+     * Get purchaser phone.
+     *
+     * @return string
+     */
+    public function getPurchaserPhone()
+    {
+        return $this->purchaserPhone;
+    }
+
+    /**
+     * Set merchant local date and time.
+     *
+     * @param  string                                               $merchantLocalDateTime
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
+     */
+    public function setMerchantLocalDateTime($merchantLocalDateTime)
+    {
+        $this->merchantLocalDateTime = $merchantLocalDateTime;
+
+        return $this;
+    }
+
+    /**
+     * Get merchant local date and time.
+     *
+     * @return string
+     */
+    public function getMerchantLocalDateTime()
+    {
+        return $this->merchantLocalDateTime;
+    }
+
+    /**
+     * Set merchant online address.
+     *
+     * @param  string                                               $merchantOnlineAddress
+     * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
+     */
+    public function setMerchantOnlineAddress($merchantOnlineAddress)
+    {
+        $this->merchantOnlineAddress = $merchantOnlineAddress;
+
+        return $this;
+    }
+
+    /**
+     * Get merchant online address.
+     *
+     * @return string
+     */
+    public function getMerchantOnlineAddress()
+    {
+        return $this->merchantOnlineAddress;
+    }
 }

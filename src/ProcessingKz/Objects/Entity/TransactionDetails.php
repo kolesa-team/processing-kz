@@ -1,7 +1,7 @@
 <?php
 namespace ProcessingKz\Objects\Entity;
 
-class TransactionDetails
+class TransactionDetails extends Base
 {
     /**
      * Billing address.

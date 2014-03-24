@@ -4,7 +4,7 @@ namespace ProcessingKz\Objects\Entity;
 /**
  * Class represents result of transaction start command.
  */
-class StartTransactionResult
+class StartTransactionResult extends Base
 {
     /**
      * Reference in customer's system.

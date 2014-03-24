@@ -4,7 +4,7 @@ namespace ProcessingKz\Objects\Entity;
 /**
  * Class represents post address.
  */
-class Address
+class Address extends Base
 {
     /**
      * First line of address.
