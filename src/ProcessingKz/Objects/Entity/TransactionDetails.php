@@ -116,7 +116,7 @@ class TransactionDetails extends Base
     protected $orderId;
 
     /**
-     * Set billing address.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$billingAddress
      *
      * @param  \ProcessingKz\Objects\Entity\Address            $billingAddress
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -129,7 +129,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get billing address.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$billingAddress
      *
      * @return \ProcessingKz\Objects\Entity\Address
      */
@@ -139,7 +139,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set currency code.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$currencyCode
      *
      * @param  integer                                         $currencyCode
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -152,7 +152,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get currency code.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$currencyCode
      *
      * @return integer
      */
@@ -162,7 +162,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set customer reference.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$customerReference
      *
      * @param  string                                          $customerReference
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -175,7 +175,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get customer reference.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$customerReference
      *
      * @return string
      */
@@ -185,7 +185,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set transaction description.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$description
      *
      * @param  string                                          $description
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -198,7 +198,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get transaction description.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$description
      *
      * @return string
      */
@@ -208,7 +208,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set goods.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$goodsList
      *
      * @param  \ProcessingKz\Objects\Entity\GoodsItem          $goodsList
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -221,7 +221,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get goods.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$goodsList
      *
      * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
@@ -231,7 +231,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set language code.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$languageCode
      *
      * @param  string                                          $languageCode
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -244,7 +244,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get language code.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$languageCode
      *
      * @return string
      */
@@ -254,7 +254,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set merchant additional information.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$merchantAdditionalInformationList
      *
      * @param  \ProcessingKz\Objects\Entity\AdditionalInformation $merchantAdditionalInformationList
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -267,7 +267,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get merchant additional information.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$merchantAdditionalInformationList
      *
      * @return \ProcessingKz\Objects\Entity\AdditionalInformation
      */
@@ -277,7 +277,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set merchant identifier.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$merchantId
      *
      * @param  string                                          $merchantId
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -290,7 +290,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get merchant identifier.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$merchantId
      *
      * @return string
      */
@@ -300,7 +300,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set merchant local date and time.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$merchantLocalDateTime
      *
      * @param  string                                          $merchantLocalDateTime
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -313,7 +313,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get merchant local date and time.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$merchantLocalDateTime
      *
      * @return string
      */
@@ -323,7 +323,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set order identifier.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$orderId
      *
      * @param  string                                          $orderId
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -336,7 +336,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get order identifier.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$orderId
      *
      * @return string
      */
@@ -346,7 +346,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set client e-mail.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$purchaserEmail
      *
      * @param  string                                          $purchaserEmail
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -359,7 +359,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get client e-mail.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$purchaserEmail
      *
      * @return string
      */
@@ -369,7 +369,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set client name.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$purchaserName
      *
      * @param  string                                          $purchaserName
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -382,7 +382,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get client name.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$purchaserName
      *
      * @return string
      */
@@ -392,7 +392,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set client phone.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$purchaserPhone
      *
      * @param  string                                          $purchaserPhone
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -405,7 +405,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get client phone.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$purchaserPhone
      *
      * @return string
      */
@@ -415,7 +415,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set return URL.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$returnURL
      *
      * @param  string                                          $returnURL
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -428,7 +428,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get return URL.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$returnURL
      *
      * @return string
      */
@@ -438,7 +438,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set terminal identifier.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$terminalId
      *
      * @param  string                                          $terminalId
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -451,7 +451,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get terminal identifier.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$terminalId
      *
      * @return string
      */
@@ -461,7 +461,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Set transaction amount.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$totalAmount
      *
      * @param  string                                          $totalAmount
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
@@ -474,7 +474,7 @@ class TransactionDetails extends Base
     }
 
     /**
-     * Get transaction amount.
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$totalAmount
      *
      * @return string
      */

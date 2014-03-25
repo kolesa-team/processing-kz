@@ -21,7 +21,7 @@ class AdditionalInformation extends Base
     public $value;
 
     /**
-     * Set key.
+     * @see \ProcessingKz\Objects\Entity\AdditionalInformation::$key
      *
      * @param  string                                             $key
      * @return \ProcessingKz\Objects\Entity\AdditionalInformation
@@ -34,7 +34,7 @@ class AdditionalInformation extends Base
     }
 
     /**
-     * Get key.
+     * @see \ProcessingKz\Objects\Entity\AdditionalInformation::$key
      *
      * @return string
      */
@@ -44,7 +44,7 @@ class AdditionalInformation extends Base
     }
 
     /**
-     * Set value.
+     * @see \ProcessingKz\Objects\Entity\AdditionalInformation::$value
      *
      * @param  string                                             $value
      * @return \ProcessingKz\Objects\Entity\AdditionalInformation
@@ -57,7 +57,7 @@ class AdditionalInformation extends Base
     }
 
     /**
-     * Get value.
+     * @see \ProcessingKz\Objects\Entity\AdditionalInformation::$value
      *
      * @return string
      */

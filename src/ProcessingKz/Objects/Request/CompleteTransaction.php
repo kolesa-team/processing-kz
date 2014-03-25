@@ -35,7 +35,7 @@ class CompleteTransaction extends Base
     protected $overrideAmount;
 
     /**
-     * Set merchant identifier.
+     * @see \ProcessingKz\Objects\Request\CompleteTransaction::$merchantId
      *
      * @param  string                                            $merchantId
      * @return \ProcessingKz\Objects\Request\CompleteTransaction
@@ -48,7 +48,7 @@ class CompleteTransaction extends Base
     }
 
     /**
-     * Get merchant identifier.
+     * @see \ProcessingKz\Objects\Request\CompleteTransaction::$merchantId
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class CompleteTransaction extends Base
     }
 
     /**
-     * Set override amount.
+     * @see \ProcessingKz\Objects\Request\CompleteTransaction::$overrideAmount
      *
      * @param  string                                            $overrideAmount
      * @return \ProcessingKz\Objects\Request\CompleteTransaction
@@ -71,7 +71,7 @@ class CompleteTransaction extends Base
     }
 
     /**
-     * Get override amount.
+     * @see \ProcessingKz\Objects\Request\CompleteTransaction::$overrideAmount
      *
      * @return string
      */
@@ -81,7 +81,7 @@ class CompleteTransaction extends Base
     }
 
     /**
-     * Set reference number.
+     * @see \ProcessingKz\Objects\Request\CompleteTransaction::$referenceNr
      *
      * @param  string                                            $referenceNr
      * @return \ProcessingKz\Objects\Request\CompleteTransaction
@@ -94,7 +94,7 @@ class CompleteTransaction extends Base
     }
 
     /**
-     * Get reference number.
+     * @see \ProcessingKz\Objects\Request\CompleteTransaction::$referenceNr
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class CompleteTransaction extends Base
     }
 
     /**
-     * Set success status.
+     * @see \ProcessingKz\Objects\Request\CompleteTransaction::$tansactionSuccess
      *
      * @param  boolean                                           $transactionSuccess
      * @return \ProcessingKz\Objects\Request\CompleteTransaction
@@ -117,7 +117,7 @@ class CompleteTransaction extends Base
     }
 
     /**
-     * Get success status.
+     * @see \ProcessingKz\Objects\Request\CompleteTransaction::$transactionSuccess
      *
      * @return boolean
      */

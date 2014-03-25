@@ -14,7 +14,7 @@ class StartTransaction extends Base
     protected $transaction;
 
     /**
-     * Set transaction details.
+     * @see \ProcessingKz\Objects\Request\StartTransaction::$transaction
      *
      * @param  \ProcessingKz\Objects\Entity\TransactionDetails $transaction
      * @return \ProcessingKz\Objects\Request\StartTransaction
@@ -27,7 +27,7 @@ class StartTransaction extends Base
     }
 
     /**
-     * Get transaction details.
+     * @see \ProcessingKz\Objects\Request\StartTransaction::$transaction
      *
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */

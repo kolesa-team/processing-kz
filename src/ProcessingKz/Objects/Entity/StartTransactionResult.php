@@ -35,7 +35,7 @@ class StartTransactionResult extends Base
     protected $success;
 
     /**
-     * Set customer's reference.
+     * @see \ProcessingKz\Objects\Entity\StartTransactionResult::$customerReference
      *
      * @param  string                                              $customerReference
      * @return \ProcessingKz\Objects\Entity\StartTransactionResult
@@ -48,7 +48,7 @@ class StartTransactionResult extends Base
     }
 
     /**
-     * Get customer's reference.
+     * @see \ProcessingKz\Objects\Entity\StartTransactionResult::$customerReference
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class StartTransactionResult extends Base
     }
 
     /**
-     * Set error description.
+     * @see \ProcessingKz\Objects\Entity\StartTransactionResult::$errorDescription
      *
      * @param  string                                              $errorDescription
      * @return \ProcessingKz\Objects\Entity\StartTransactionResult
@@ -71,7 +71,7 @@ class StartTransactionResult extends Base
     }
 
     /**
-     * Get error description.
+     * @see \ProcessingKz\Objects\Entity\StartTransactionResult::$errorDescription
      *
      * @return string
      */
@@ -81,7 +81,7 @@ class StartTransactionResult extends Base
     }
 
     /**
-     * Set redirect URL.
+     * @see \ProcessingKz\Objects\Entity\StartTransactionResult::$redirectURL
      *
      * @param  string                                              $redirectURL
      * @return \ProcessingKz\Objects\Entity\StartTransactionResult
@@ -94,7 +94,7 @@ class StartTransactionResult extends Base
     }
 
     /**
-     * Get redirect URL.
+     * @see \ProcessingKz\Objects\Entity\StartTransactionResult::$redirectURL
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class StartTransactionResult extends Base
     }
 
     /**
-     * Set success status.
+     * @see \ProcessingKz\Objects\Entity\StartTransactionResult::$success
      *
      * @param  boolean                                             $success
      * @return \ProcessingKz\Objects\Entity\StartTransactionResult
@@ -117,7 +117,7 @@ class StartTransactionResult extends Base
     }
 
     /**
-     * Get success status.
+     * @see \ProcessingKz\Objects\Entity\StartTransactionResult::$success
      *
      * @return boolean
      */

@@ -49,7 +49,7 @@ class Address extends Base
     protected $zip;
 
     /**
-     * Set first line of address.
+     * @see \ProcessingKz\Objects\Entity\Address::$addressLine1
      *
      * @param  string                               $addressLine1
      * @return \ProcessingKz\Objects\Entity\Address
@@ -62,7 +62,7 @@ class Address extends Base
     }
 
     /**
-     * Get first line of address.
+     * @see \ProcessingKz\Objects\Entity\Address::$addressLine1
      *
      * @return string
      */
@@ -72,7 +72,7 @@ class Address extends Base
     }
 
     /**
-     * Set second line of address.
+     * @see \ProcessingKz\Objects\Entity\Address::$addressLine2
      *
      * @param  string                               $addressLine2
      * @return \ProcessingKz\Objects\Entity\Address
@@ -85,7 +85,7 @@ class Address extends Base
     }
 
     /**
-     * Get second line of address.
+     * @see \ProcessingKz\Objects\Entity\Address::$addressLine2
      *
      * @return string
      */
@@ -95,7 +95,7 @@ class Address extends Base
     }
 
     /**
-     * Set city.
+     * @see \ProcessingKz\Objects\Entity\Address::$city
      *
      * @param  string                               $city
      * @return \ProcessingKz\Objects\Entity\Address
@@ -108,7 +108,7 @@ class Address extends Base
     }
 
     /**
-     * Get city.
+     * @see \ProcessingKz\Objects\Entity\Address::$city
      *
      * @return string
      */
@@ -118,7 +118,7 @@ class Address extends Base
     }
 
     /**
-     * Set country.
+     * @see \ProcessingKz\Objects\Entity\Address::$country
      *
      * @param  string                               $country
      * @return \ProcessingKz\Objects\Entity\Address
@@ -131,7 +131,7 @@ class Address extends Base
     }
 
     /**
-     * Get country.
+     * @see \ProcessingKz\Objects\Entity\Address::$country
      *
      * @return string
      */
@@ -141,7 +141,7 @@ class Address extends Base
     }
 
     /**
-     * Set county.
+     * @see \ProcessingKz\Objects\Entity\Address::$county
      *
      * @param  string                               $county
      * @return \ProcessingKz\Objects\Entity\Address
@@ -154,7 +154,7 @@ class Address extends Base
     }
 
     /**
-     * Get county.
+     * @see \ProcessingKz\Objects\Entity\Address::$county
      *
      * @return string
      */
@@ -164,7 +164,7 @@ class Address extends Base
     }
 
     /**
-     * Set ZIP-code.
+     * @see \ProcessingKz\Objects\Entity\Address::$zip
      *
      * @param  string                               $zip
      * @return \ProcessingKz\Objects\Entity\Address
@@ -177,7 +177,7 @@ class Address extends Base
     }
 
     /**
-     * Get ZIP-code.
+     * @see \ProcessingKz\Objects\Entity\Address::$zip
      *
      * @return string
      */

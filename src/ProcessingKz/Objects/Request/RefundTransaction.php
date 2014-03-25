@@ -56,7 +56,7 @@ class RefundTransaction extends Base
     protected $additionalInformation;
 
     /**
-     * Set additional information.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$additionalInformation
      *
      * @param  \ProcessingKz\Objects\Entity\AdditionalInformation $additionalInformation
      * @return \ProcessingKz\Objects\Request\RefundTransaction
@@ -69,7 +69,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Get additional information.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$additionalInformation
      *
      * @return \ProcessingKz\Objects\Entity\AdditionalInformation
      */
@@ -79,7 +79,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Set transaction description.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$description
      *
      * @param  string                                          $description
      * @return \ProcessingKz\Objects\Request\RefundTransaction
@@ -92,7 +92,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Get transaction description.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$description
      *
      * @return string
      */
@@ -102,7 +102,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Set goods to refund.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$goodsToRefund
      *
      * @param  \ProcessingKz\Objects\Entity\GoodsItem          $goodsToRefund
      * @return \ProcessingKz\Objects\Request\RefundTransaction
@@ -115,7 +115,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Get goods to refund.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$goodsToRefund
      *
      * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
@@ -125,7 +125,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Set merchant identifier.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$merchantId
      *
      * @param  string                                          $merchantId
      * @return \ProcessingKz\Objects\Request\RefundTransaction
@@ -138,7 +138,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Get merchant identifier.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$merchantId
      *
      * @return string
      */
@@ -148,7 +148,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Set password.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$password
      *
      * @param  string                                          $password
      * @return \ProcessingKz\Objects\Request\RefundTransaction
@@ -161,7 +161,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Get password.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$password
      *
      * @return string
      */
@@ -171,7 +171,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Set reference number.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$referenceNr
      *
      * @param  string                                          $referenceNr
      * @return \ProcessingKz\Objects\Request\RefundTransaction
@@ -184,7 +184,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Get reference number.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$referenceNr
      *
      * @return string
      */
@@ -194,7 +194,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Set amount to refund.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$refundAmount
      *
      * @param  string                                          $refundAmount
      * @return \ProcessingKz\Objects\Request\RefundTransaction
@@ -207,7 +207,7 @@ class RefundTransaction extends Base
     }
 
     /**
-     * Get amount to refund.
+     * @see \ProcessingKz\Objects\Request\RefundTransaction::$refundAmount
      *
      * @return string
      */

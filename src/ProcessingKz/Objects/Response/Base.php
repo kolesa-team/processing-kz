@@ -14,7 +14,7 @@ abstract class Base
     protected $return;
 
     /**
-     * Set return code/status.
+     * @see \ProcessingKz\Objects\Response\Base::$return
      *
      * @param  mixed                               $return
      * @return \ProcessingKz\Objects\Response\Base
@@ -27,7 +27,7 @@ abstract class Base
     }
 
     /**
-     * Get return code/status.
+     * @see \ProcessingKz\Objects\Response\Base::$return
      *
      * @return mixed
      */

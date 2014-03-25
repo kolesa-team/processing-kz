@@ -162,7 +162,7 @@ class StoredTransactionStatus extends Base
     protected $merchantOnlineAddress;
 
     /**
-     * Set additional information.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$additionalInformation
      *
      * @param  \ProcessingKz\Objects\Entity\AdditionalInformation   $additionalInformation
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -175,7 +175,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get additional information.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$additionalInformation
      *
      * @return \ProcessingKz\Objects\Entity\AdditionalInformation
      */
@@ -185,7 +185,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set authorised amount.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$amountAuthorised
      *
      * @param  string                                               $amountAuthorised
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -198,7 +198,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get authorised amount.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$amountAuthorised
      *
      * @return string
      */
@@ -208,7 +208,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set amount refunded.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$amountRefunded
      *
      * @param  string                                               $amountRefunded
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -221,7 +221,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get amount refunded.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$amountRefunded
      *
      * @return string
      */
@@ -231,7 +231,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set amount requested.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$amountRequested
      *
      * @param  string                                               $amountRequested
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -244,7 +244,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get amount requested.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$amountRequested
      *
      * @return string
      */
@@ -254,7 +254,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set amount settled.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$amountSettled
      *
      * @param  string                                               $amountSettled
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -267,7 +267,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get amount settled.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$amountSettled
      *
      * @return string
      */
@@ -277,7 +277,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set authorisation code.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$authCode
      *
      * @param  string                                               $authCode
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -290,7 +290,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get authorisation code.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$authCode
      *
      * @return string
      */
@@ -300,7 +300,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set goods.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$goods
      *
      * @param  \ProcessingKz\Objects\Entity\GoodsItem               $goods
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -313,7 +313,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get goods.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$goods
      *
      * @return \ProcessingKz\Objects\Entity\GoodsItem
      */
@@ -323,7 +323,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set currency code.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$transactionCurrencyCode
      *
      * @param  string                                               $transactionCurrencyCode
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -336,7 +336,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get currency code.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$transactionCurrencyCode
      *
      * @return string
      */
@@ -346,7 +346,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set transaction status.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$transactionStatus
      *
      * @param  string                                               $transactionStatus
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -359,7 +359,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get transaction status.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$transactionStatus
      *
      * @return string
      */
@@ -369,7 +369,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set order id.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$orderId
      *
      * @param  string                                               $orderId
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -377,12 +377,12 @@ class StoredTransactionStatus extends Base
     public function setOrderId($orderId)
     {
         $this->orderId = $orderId;
-        
+
         return $this;
     }
 
     /**
-     * Get order id.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$orderId
      *
      * @return string
      */
@@ -392,7 +392,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set purchaser name.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$purchaserName
      *
      * @param  string                                               $purchaserName
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -400,12 +400,12 @@ class StoredTransactionStatus extends Base
     public function setPurchaserName($purchaserName)
     {
         $this->purchaserName = $purchaserName;
-        
+
         return $this;
     }
 
     /**
-     * Get purchaser name.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$purchaserName
      *
      * @return string
      */
@@ -415,7 +415,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set purchaser email.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$purchaserEmail
      *
      * @param  string                                               $purchaserEmail
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -423,12 +423,12 @@ class StoredTransactionStatus extends Base
     public function setPurchaserEmail($purchaserEmail)
     {
         $this->purchaserEmail = $purchaserEmail;
-        
+
         return $this;
     }
 
     /**
-     * Get purchaser email.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$purchaserEmail
      *
      * @return string
      */
@@ -438,7 +438,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set purchaser phone.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$purchaserPhone
      *
      * @param  string                                               $purchaserPhone
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -446,12 +446,12 @@ class StoredTransactionStatus extends Base
     public function setPurchaserPhone($purchaserPhone)
     {
         $this->purchaserPhone = $purchaserPhone;
-        
+
         return $this;
     }
 
     /**
-     * Get purchaser phone.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$purchaserPhone
      *
      * @return string
      */
@@ -461,7 +461,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set merchant local date and time.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$merchantLocalDateTime
      *
      * @param  string                                               $merchantLocalDateTime
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -474,7 +474,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get merchant local date and time.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$merchantLocalDateTime
      *
      * @return string
      */
@@ -484,7 +484,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Set merchant online address.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$merchantOnlineAddress
      *
      * @param  string                                               $merchantOnlineAddress
      * @return \ProcessingKz\Objects\Entity\StoredTransactionStatus
@@ -497,7 +497,7 @@ class StoredTransactionStatus extends Base
     }
 
     /**
-     * Get merchant online address.
+     * @see \ProcessingKz\Objects\Entity\StoredTransactionStatus::$merchantOnlineAddress
      *
      * @return string
      */

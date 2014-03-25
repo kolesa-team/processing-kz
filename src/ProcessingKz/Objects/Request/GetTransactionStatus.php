@@ -21,7 +21,7 @@ class GetTransactionStatus extends Base
     protected $referenceNr;
 
     /**
-     * Set merchant identifier.
+     * @see \ProcessingKz\Objects\Request\GetTransactionStatus::$merchantId
      *
      * @param  string                                             $merchantId
      * @return \ProcessingKz\Objects\Request\GetTransactionStatus
@@ -34,7 +34,7 @@ class GetTransactionStatus extends Base
     }
 
     /**
-     * Get merchant identifier.
+     * @see \ProcessingKz\Objects\Request\GetTransactionStatus::$merchantId
      *
      * @return string
      */
@@ -44,7 +44,7 @@ class GetTransactionStatus extends Base
     }
 
     /**
-     * Set reference number.
+     * @see \ProcessingKz\Objects\Request\GetTransactionStatus::$referenceNr
      *
      * @param  string                                             $referenceNr
      * @return \ProcessingKz\Objects\Request\GetTransactionStatus
@@ -57,7 +57,7 @@ class GetTransactionStatus extends Base
     }
 
     /**
-     * Get reference number.
+     * @see \ProcessingKz\Objects\Request\GetTransactionStatus::$referenceNr
      *
      * @return string
      */

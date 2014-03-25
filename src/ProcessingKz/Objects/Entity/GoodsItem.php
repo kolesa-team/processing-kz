@@ -35,7 +35,7 @@ class GoodsItem extends Base
     protected $nameOfGoods;
 
     /**
-     * Set amount of goods.
+     * @see \ProcessingKz\Objects\Entity\GoodsItem::$amount
      *
      * @param  string                                 $amount
      * @return \ProcessingKz\Objects\Entity\GoodsItem
@@ -48,7 +48,7 @@ class GoodsItem extends Base
     }
 
     /**
-     * Get amount of goods.
+     * @see \ProcessingKz\Objects\Entity\GoodsItem::$amount
      *
      * @return string
      */
@@ -58,7 +58,7 @@ class GoodsItem extends Base
     }
 
     /**
-     * Set currency code.
+     * @see \ProcessingKz\Objects\Entity\GoodsItem::$currencyCode
      *
      * @param  integer                                $currencyCode
      * @return \ProcessingKz\Objects\Entity\GoodsItem
@@ -71,7 +71,7 @@ class GoodsItem extends Base
     }
 
     /**
-     * Get currency code.
+     * @see \ProcessingKz\Objects\Entity\GoodsItem::$currencyCode
      *
      * @return integer
      */
@@ -81,7 +81,7 @@ class GoodsItem extends Base
     }
 
     /**
-     * Set merchant's goods identifier.
+     * @see \ProcessingKz\Objects\Entity\GoodsItem::$merchantsGoodsID
      *
      * @param  string                                 $merchantsGoodsId
      * @return \ProcessingKz\Objects\Entity\GoodsItem
@@ -94,7 +94,7 @@ class GoodsItem extends Base
     }
 
     /**
-     * Get merchant's goods identifier.
+     * G@see \ProcessingKz\Objects\Entity\GoodsItem::$merchantsGoodsID
      *
      * @return string
      */
@@ -104,7 +104,7 @@ class GoodsItem extends Base
     }
 
     /**
-     * Set name of goods.
+     * @see \ProcessingKz\Objects\Entity\GoodsItem::$nameOfGoods
      *
      * @param  string                                 $nameOfGoods
      * @return \ProcessingKz\Objects\Entity\GoodsItem
@@ -117,7 +117,7 @@ class GoodsItem extends Base
     }
 
     /**
-     * Get name of goods.
+     * @see \ProcessingKz\Objects\Entity\GoodsItem::$nameOfGoods
      *
      * @return string
      */
