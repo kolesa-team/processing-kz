@@ -14,7 +14,7 @@ class StartTransaction extends Base
      * @param  \ProcessingKz\Objects\Entity\StartTransactionResult $return
      * @return \ProcessingKz\Objects\Response\StartTransaction
      */
-    public function setReturn(StartTransactionResult $return)
+    public function setReturn($return)
     {
         $this->return = $return;
 

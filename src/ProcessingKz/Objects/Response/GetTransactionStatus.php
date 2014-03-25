@@ -14,7 +14,7 @@ class GetTransactionStatus extends Base
      * @param  \ProcessingKz\Objects\Entity\StoredTransactionStatus $return
      * @return \ProcessingKz\Objects\Response\StartTransaction
      */
-    public function setReturn(StoredTransactionStatus $return)
+    public function setReturn($return)
     {
         $this->return = $return;
 
