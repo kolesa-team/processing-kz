@@ -236,6 +236,12 @@ class TransactionDetails extends Base
         return $this;
     }
 
+    /**
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$goodsList
+     *
+     * @param  \ProcessingKz\Objects\Entity\GoodsItem          $goodsList
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
+     */
     public function addGoodsItem(GoodsItem $goodsItem)
     {
         $this->goodsList[] = $goodsItem;
