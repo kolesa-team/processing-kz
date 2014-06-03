@@ -34,7 +34,7 @@ class TransactionDetails extends Base
     /**
      * User's goods.
      *
-     * @var \ProcessingKz\Objects\Entity\GoodsItem
+     * @var array[\ProcessingKz\Objects\Entity\GoodsItem]
      */
     protected $goodsList;
 
@@ -114,6 +114,14 @@ class TransactionDetails extends Base
      * @var string
      */
     protected $orderId;
+
+    /**
+     * Public constructor.
+     */
+    public function __construct()
+    {
+        $this->goodsList = array();
+    }
 
     /**
      * @see \ProcessingKz\Objects\Entity\TransactionDetails::$billingAddress
@@ -210,12 +218,20 @@ class TransactionDetails extends Base
     /**
      * @see \ProcessingKz\Objects\Entity\TransactionDetails::$goodsList
      *
-     * @param  \ProcessingKz\Objects\Entity\GoodsItem          $goodsList
+     * @param  array                                           $goodsList
      * @return \ProcessingKz\Objects\Entity\TransactionDetails
      */
-    public function setGoodsList(GoodsItem $goodsList)
+    public function setGoodsList($goodsList)
     {
-        $this->goodsList = $goodsList;
+        // Backward API compatibility.
+        if (!is_array($goodsList)) {
+            $goodsList = array($goodsList);
+        }
+
+        $this->goodsList = array();
+        foreach ($goodsList as $goodItem) {
+            $this->addGoodsItem($goodItem);
+        }
 
         return $this;
     }
@@ -223,7 +239,20 @@ class TransactionDetails extends Base
     /**
      * @see \ProcessingKz\Objects\Entity\TransactionDetails::$goodsList
      *
-     * @return \ProcessingKz\Objects\Entity\GoodsItem
+     * @param  \ProcessingKz\Objects\Entity\GoodsItem          $goodsList
+     * @return \ProcessingKz\Objects\Entity\TransactionDetails
+     */
+    public function addGoodsItem(GoodsItem $goodsItem)
+    {
+        $this->goodsList[] = $goodsItem;
+
+        return $this;
+    }
+
+    /**
+     * @see \ProcessingKz\Objects\Entity\TransactionDetails::$goodsList
+     *
+     * @return array[\ProcessingKz\Objects\Entity\GoodsItem]
      */
     public function getGoodsList()
     {
