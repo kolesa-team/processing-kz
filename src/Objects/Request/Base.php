@@ -6,5 +6,4 @@ namespace ProcessingKz\Objects\Request;
  */
 abstract class Base
 {
-
 }

@@ -75,7 +75,6 @@ class Client extends \SoapClient
     public function startTransaction(Request\StartTransaction $parameters)
     {
         return $this->__soapCall('startTransaction', array($parameters), $this->defaults);
-
     }
 
     /**

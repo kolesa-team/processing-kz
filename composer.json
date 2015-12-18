@@ -13,6 +13,7 @@
         "ext-soap": "*"
     },
     "require-dev": {
+        "squizlabs/php_codesniffer": "1.*",
         "phpunit/phpunit": "~4.6"
     },
     "autoload": {
