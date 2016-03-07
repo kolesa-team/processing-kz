@@ -1,6 +1,5 @@
 ProcessingKz
 ============
-[![Build Status](https://travis-ci.org/iborodikhin/processing-kz.png?branch=master)](https://travis-ci.org/iborodikhin/processing-kz)
 
 PHP client for SOAP API of processing.kz
 
