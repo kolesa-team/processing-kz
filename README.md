@@ -1,10 +1,13 @@
-ProcessingKz
-============
+# ProcessingKz
 
 PHP client for SOAP API of processing.kz
 
-Usage example
--------------
+## Installation
+```
+$ composer require kolesa-team/processing-kz
+```
+
+## Usage example
 
     $client = new \ProcessingKz\Client();
 
