@@ -3,10 +3,6 @@ ProcessingKz
 
 PHP client for SOAP API of processing.kz
 
-## Library is deprecated
-
-This library is deprecated and no longer supported. Use `kolesa-team/processing-kz` instead.
-
 Usage example
 -------------
 

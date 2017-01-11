@@ -16,6 +16,9 @@
         "squizlabs/php_codesniffer": "1.*",
         "phpunit/phpunit": "~4.6"
     },
+    "replace": {
+        "iborodikhin/processing-kz": "*"
+    },
     "autoload": {
         "psr-4": { "ProcessingKz\\": "src/", "Tests\\": "tests/suite/" }
     }
